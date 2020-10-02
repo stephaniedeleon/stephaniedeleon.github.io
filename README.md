@@ -1,2 +1,2 @@
-# stephaniedeleon.github.io
-# lovepanini.com
+# https://stephaniedeleon.github.io
+# https://lovepanini.com/
