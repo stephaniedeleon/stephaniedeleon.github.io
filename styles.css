@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(224, 254, 254);
+    background-color: rgb(204, 241, 255);
     font-family: Helvetica Neue, Helvetica, Arial;
     color: navy;
     margin: 0;
@@ -21,6 +21,7 @@ div {
     background: cornflowerblue;
     margin: auto;
     width: 100px;
+    text-align: center;
 }
 
 ul {
