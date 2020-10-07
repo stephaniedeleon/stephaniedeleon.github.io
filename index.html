@@ -15,6 +15,29 @@
         padding: 1in;
     }
     
+    section {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    div {
+        background: rgb(204, 241, 255);
+        margin: auto;
+        width: 100px;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
     footer {
         background: rgb(250, 255, 199);
         text-align: center;
@@ -35,14 +58,22 @@
 </head>
 
 <body>
-    <header>Love, Panini</header>
-    <p><button>Wellness</button></p>
-    <p><button>Food</button></p>
-    <p><button>Books</button></p>
-    <p><button>Tech</button></p>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Projects</li>
+            </ul>
+        </nav>
+        <h1>Love, Panini</h1>
+    </header>
 
     <section>
-        four-sections
+        <div>Wellness</div>
+        <div>Food</div>
+        <div>Tech</div>
+        <div>Books</div>
     </section>
     <section>
         lower-section
