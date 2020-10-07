@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(224, 254, 254);
+    font-family: Helvetica Neue, Helvetica, Arial;
+    color: navy;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(250, 255, 199);
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    background: cornflowerblue;
+    margin: auto;
+    width: 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    background: rgb(250, 255, 199);
+    text-align: center;
+    padding: 10px, 20px;
+}
