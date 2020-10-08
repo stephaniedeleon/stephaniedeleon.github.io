@@ -15,15 +15,18 @@
         font-family: "Petit Formal Script", serif;
         text-align: center;
     }
+    
+    section {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
     /*classes*/
     
     section.feature-box div {
         margin: auto;
         width: 100px;
         font-weight: bold;
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
     }
     
     section.feature-box.sales div {
@@ -69,5 +72,5 @@
         background: rgb(250, 255, 199);
         text-align: center;
         padding: 10px, 20px;
-        font-family: "Varela", serif;
+        font-family: "Alice", serif;
     }
