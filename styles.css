@@ -1,4 +1,4 @@
-body {
+    body {
     background-color: rgb(204, 241, 255);
     font-family: Helvetica Neue, Helvetica, Arial;
     margin: 0;
@@ -14,7 +14,7 @@ header {
 
 /*classes*/
 
-section.feature-box {
+section.feature-box div {
     margin: auto;
     width: 100px;
     text-align: center;
@@ -37,41 +37,32 @@ section.feature-box.closeouts div {
 /*ids*/
 
 #fontHome {
-    font-style: italic;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-li {
-    background: rgb(250, 255, 199);
-    display: inline-block;
-    padding: 2px;
-    margin-right: 20px;
-}
-
-
-/*Pseudocode classes*/
-
-li:first-child {
-    background-color: rgb(185, 214, 243);
-    border-radius: 4px;
-}
-
-a {
-    text-decoration: none;
-    text-decoration: midnightblue;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background: rgb(250, 255, 199);
-    text-align: center;
-    padding: 10px, 20px;
-}
+    font-family: 'Courier New', Courier, monospace;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        background: rgb(250, 255, 199);
+        display: inline-block;
+        padding: 2px;
+        margin-right: 20px;
+    }
+    /*Pseudocode classes*/
+    li:first-child {
+        background-color: rgb(185, 214, 243);
+        border-radius: 4px;
+    }
+    a {
+        text-decoration: none;
+        text-decoration: midnightblue;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    footer {
+        background: rgb(250, 255, 199);
+        text-align: center;
+        padding: 10px, 20px;
+    }
