@@ -11,12 +11,6 @@ header {
     padding: 20px;
 }
 
-section {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
 
 /*classes*/
 
@@ -25,6 +19,9 @@ section.feature-box {
     width: 100px;
     text-align: center;
     font-weight: bold;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 section.feature-box.sales div {
