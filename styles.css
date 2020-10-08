@@ -10,6 +10,11 @@
         background: rgb(250, 255, 199);
         padding: 20px;
     }
+    
+    h1 {
+        font-family: "Petit Formal Script", serif;
+        text-align: center;
+    }
     /*classes*/
     
     section.feature-box div {
@@ -29,11 +34,6 @@
     
     section.feature-box.closeouts div {
         background: rgb(224, 187, 228);
-    }
-    /*ids*/
-    
-    #fontHome {
-        font-family: "Sofia";
     }
     
     ul {
@@ -58,7 +58,7 @@
     a {
         text-decoration: none;
         color: navy;
-        font-family: "Sofia";
+        font-family: "Varela", serif;
     }
     
     a:hover {
