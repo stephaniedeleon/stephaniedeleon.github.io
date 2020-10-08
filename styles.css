@@ -1,5 +1,6 @@
     body {
-        background-color: rgb(204, 241, 255);
+        background-color: rgb(224, 254, 254);
+        /*Light Cyan*/
         font-family: Helvetica Neue, Helvetica, Arial;
         margin: 0;
         padding: 0;
@@ -20,6 +21,7 @@
         padding: 20px;
         display: flex;
         flex-direction: row;
+        text-align: center;
     }
     /*classes*/
     
@@ -71,6 +73,10 @@
     footer {
         background: rgb(250, 255, 199);
         text-align: center;
-        padding: 10px, 20px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        /*padding: 10px, 20px;*/
         font-family: "Alice", serif;
     }
