@@ -1,48 +1,47 @@
     body {
-    background-color: rgb(204, 241, 255);
-    font-family: Helvetica Neue, Helvetica, Arial;
-    margin: 0;
-    padding: 0;
-    color: navy;
-}
-
-header {
-    background: rgb(250, 255, 199);
-    padding: 20px;
-}
-
-
-/*classes*/
-
-section.feature-box div {
-    margin: auto;
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-section.feature-box.sales div {
-    background: cornflowerblue;
-    color: white;
-}
-
-section.feature-box.closeouts div {
-    background: rgb(224, 187, 228);
-}
-
-
-/*ids*/
-
-#fontHome {
-    font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(204, 241, 255);
+        font-family: Helvetica Neue, Helvetica, Arial;
+        margin: 0;
+        padding: 0;
+        color: navy;
+    }
+    
+    header {
+        background: rgb(250, 255, 199);
+        padding: 20px;
+    }
+    /*classes*/
+    
+    section.feature-box div {
+        margin: auto;
+        width: 100px;
+        text-align: center;
+        font-weight: bold;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    section.feature-box.sales div {
+        background: cornflowerblue;
+        color: white;
+    }
+    
+    section.feature-box.closeouts div {
+        background: rgb(224, 187, 228);
+    }
+    /*ids*/
+    
+    #fontHome {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
     ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
     }
+    
     li {
         background: rgb(250, 255, 199);
         display: inline-block;
@@ -50,17 +49,21 @@ section.feature-box.closeouts div {
         margin-right: 20px;
     }
     /*Pseudocode classes*/
+    
     li:first-child {
         background-color: rgb(185, 214, 243);
         border-radius: 4px;
     }
+    
     a {
         text-decoration: none;
         text-decoration: midnightblue;
     }
+    
     a:hover {
         text-decoration: underline;
     }
+    
     footer {
         background: rgb(250, 255, 199);
         text-align: center;
