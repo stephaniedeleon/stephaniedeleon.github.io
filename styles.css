@@ -57,11 +57,13 @@
     
     a {
         text-decoration: none;
-        text-decoration: midnightblue;
+        color: navy;
+        font-family: 'Varela';
     }
     
     a:hover {
-        text-decoration: underline;
+        background-color: rgb(199, 222, 245);
+        border-radius: 4px;
     }
     
     footer {
