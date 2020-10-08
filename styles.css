@@ -20,7 +20,6 @@
     section.feature-box div {
         margin: auto;
         width: 100px;
-        text-align: center;
         font-weight: bold;
         padding: 20px;
         display: flex;
@@ -62,7 +61,7 @@
     }
     
     a:hover {
-        background-color: rgb(199, 222, 245);
+        background-color: rgb(253, 253, 149);
         border-radius: 4px;
     }
     
@@ -70,4 +69,5 @@
         background: rgb(250, 255, 199);
         text-align: center;
         padding: 10px, 20px;
+        font-family: "Varela", serif;
     }
