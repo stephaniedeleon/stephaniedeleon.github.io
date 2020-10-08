@@ -1,5 +1,5 @@
     body {
-        background-color: rgb(224, 254, 254);
+        background-color: rgb(217, 255, 255);
         /*Light Cyan*/
         font-family: Helvetica Neue, Helvetica, Arial;
         margin: 0;
@@ -77,6 +77,6 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        /*padding: 10px, 20px;*/
+        padding: 20px;
         font-family: "Alice", serif;
     }
