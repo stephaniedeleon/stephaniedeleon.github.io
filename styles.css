@@ -10,10 +10,9 @@
     header {
         /*background: rgb(250, 255, 199);*/
         padding: 0;
-        padding-bottom: 8px;
     }
     
-    header div {
+    div.home-header {
         display: flex;
         overflow: hidden;
     }
@@ -23,14 +22,19 @@
         margin-right: auto;
     }
     
-    header div h2 {
-        font-family: "Petit Formal Script", serif;
+    div.home-header h2 {
+        font-family: "Georgia", serif;
+        text-align: center;
+    }
+    
+    div.home-header h3 {
+        font-family: "Courier New", serif;
         text-align: center;
     }
     
     nav {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         background: rgb(198, 242, 255);
         overflow: hidden;
     }
@@ -41,11 +45,10 @@
         list-style-type: none;
         display: inline-block;
     }
-    
-    nav h3 {
+    /*h3 {
         font-family: "Petit Formal Script", serif;
         justify-content: left;
-    }
+    }*/
     
     ul.top-nav li a {
         text-decoration: none;
