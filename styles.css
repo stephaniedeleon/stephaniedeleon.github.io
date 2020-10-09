@@ -13,9 +13,19 @@
         padding-bottom: 8px;
     }
     
+    header div {
+        display: flex;
+        overflow: hidden;
+    }
+    
     .logo {
         cursor: pointer;
         margin-right: auto;
+    }
+    
+    header div h2 {
+        font-family: "Petit Formal Script", serif;
+        text-align: center;
     }
     
     nav {
@@ -27,11 +37,12 @@
     
     ul.top-nav li {
         margin: 0;
+        padding: 0;
         list-style-type: none;
         display: inline-block;
     }
     
-    ul.top-nav li h4 {
+    nav h3 {
         font-family: "Petit Formal Script", serif;
         justify-content: left;
     }
@@ -45,10 +56,6 @@
         transition: all 0.3s ease 0s;
     }
     /*Pseudocode classes*/
-    
-    ul.top-nav li a:last-child {
-        padding-right: 0.5in;
-    }
     
     ul.top-nav li a:hover {
         background-color: rgb(130, 179, 255);
@@ -66,11 +73,6 @@
     ul.top-nav li a.active:hover {
         text-decoration: underline;
         color: navy;
-    }
-    
-    h1 {
-        font-family: "Petit Formal Script", serif;
-        text-align: center;
     }
     
     section {
