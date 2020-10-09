@@ -27,7 +27,7 @@
     
     ul.top-nav li {
         margin: 0;
-        /*padding: 0;*/
+        padding-right: 10px;
         list-style-type: none;
         display: inline-block;
     }
