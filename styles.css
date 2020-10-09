@@ -27,9 +27,13 @@
     
     ul.top-nav li {
         margin: 0;
-        padding-right: 10px;
         list-style-type: none;
         display: inline-block;
+    }
+    
+    ul.top-nav li h4 {
+        font-family: "Petit Formal Script", serif;
+        justify-content: left;
     }
     
     ul.top-nav li a {
@@ -41,6 +45,10 @@
         transition: all 0.3s ease 0s;
     }
     /*Pseudocode classes*/
+    
+    ul.top-nav li a:last-child {
+        padding-right: 0.5in;
+    }
     
     ul.top-nav li a:hover {
         background-color: rgb(130, 179, 255);
