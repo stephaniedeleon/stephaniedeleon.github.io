@@ -34,7 +34,7 @@
     
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         background: rgb(198, 242, 255);
         overflow: hidden;
     }
