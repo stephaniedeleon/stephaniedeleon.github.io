@@ -21,6 +21,7 @@
     nav {
         display: flex;
         justify-content: flex-end;
+        padding-right: 8px;
         background: rgb(198, 242, 255);
         overflow: hidden;
     }
@@ -32,26 +33,37 @@
         display: inline-block;
     }
     
-    ul.top-nav a {
+    ul.top-nav li a {
         text-decoration: none;
         padding: 12px 14px;
         color: navy;
         text-align: center;
         font-family: "Varela", serif;
+        transition: all 0.3s ease 0s;
     }
     /*Pseudocode classes*/
     
-    ul.top-nav a:hover {
+    ul.top-nav li a:hover {
         background-color: rgb(130, 179, 255);
         border-top-left-radius: 12px;
         border-bottom-right-radius: 12px;
         color: white;
+        padding: 9px 11px;
     }
     
-    ul.top-nav a.active {
+    ul.top-nav li a.active {
         background-color: rgb(250, 255, 199);
         border-top-left-radius: 12px;
         border-bottom-right-radius: 12px;
+        padding: 9px 11px;
+    }
+    
+    ul.top-nav li a.active:hover {
+        background-color: rgb(130, 179, 255);
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        color: white;
+        padding: 9px 11px;
     }
     
     h1 {
