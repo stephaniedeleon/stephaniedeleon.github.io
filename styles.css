@@ -21,7 +21,6 @@
     nav {
         display: flex;
         justify-content: flex-end;
-        padding: 30px, 10%;
         background: rgb(198, 242, 255);
         overflow: hidden;
     }
@@ -58,6 +57,7 @@
     
     ul.top-nav li a.active:hover {
         text-decoration: underline;
+        color: navy;
     }
     
     h1 {
