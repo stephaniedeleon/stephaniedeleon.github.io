@@ -10,40 +10,41 @@
     header {
         background: rgb(250, 255, 199);
         padding: 0;
+        padding-bottom: 10px;
     }
     
     nav {
         background: rgb(198, 242, 255);
-        padding: 20px;
+        overflow: hidden;
     }
     
-    ul {
+    ul.top-nav li {
         margin: 0;
         padding: 0;
         list-style-type: none;
-    }
-    
-    li {
         display: inline-block;
-        padding: 2px;
+        padding: 14px 16px;
         margin-right: 30px;
     }
     
-    a {
+    ul.top-nav a {
+        float: right;
         text-decoration: none;
         color: navy;
+        text-align: center;
         font-family: "Varela", serif;
     }
     /*Pseudocode classes*/
     
-    a:hover {
+    ul.top-nav a:hover {
         background-color: rgb(130, 179, 255);
         color: white;
         font-weight: bold;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 2px;
-        padding-right: 2px;
+    }
+    
+    ul.top-nav a.active {
+        background-color: rgb(250, 255, 199);
+        color: navy;
     }
     
     h1 {
@@ -79,9 +80,8 @@
         /*rgb(250, 255, 199);*/
         text-align: center;
         position: fixed;
-        left: 0;
         bottom: 0;
         width: 100%;
-        padding: 20px;
+        padding: 15px;
         font-family: "Alice", serif;
     }
