@@ -15,7 +15,6 @@
     
     nav {
         background: rgb(198, 242, 255);
-        float: right;
         overflow: hidden;
     }
     
@@ -28,7 +27,7 @@
     
     ul.top-nav a {
         text-decoration: none;
-        padding: 14px 16px;
+        padding: 12px 14px;
         color: navy;
         text-align: center;
         font-family: "Varela", serif;
@@ -42,7 +41,6 @@
     
     ul.top-nav a.active {
         background-color: rgb(250, 255, 199);
-        color: navy;
     }
     
     h1 {
