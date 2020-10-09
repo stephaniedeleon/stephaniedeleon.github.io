@@ -8,12 +8,19 @@
     }
     
     header {
-        background: rgb(250, 255, 199);
+        /*background: rgb(250, 255, 199);*/
         padding: 0;
         padding-bottom: 8px;
     }
     
+    .logo {
+        cursor: pointer;
+        margin-right: auto;
+    }
+    
     nav {
+        display: flex;
+        justify-content: flex-end;
         background: rgb(198, 242, 255);
         overflow: hidden;
     }
@@ -36,11 +43,15 @@
     
     ul.top-nav a:hover {
         background-color: rgb(130, 179, 255);
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
         color: white;
     }
     
     ul.top-nav a.active {
         background-color: rgb(250, 255, 199);
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
     }
     
     h1 {
@@ -78,6 +89,6 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        padding: 15px;
+        padding: 13px;
         font-family: "Alice", serif;
     }
