@@ -1,5 +1,5 @@
     body {
-        background-color: rgb(217, 255, 255);
+        background-color: rgb(224, 254, 254);
         /*Light Cyan*/
         font-family: Helvetica Neue, Helvetica, Arial;
         margin: 0;
@@ -9,6 +9,11 @@
     
     header {
         background: rgb(250, 255, 199);
+        padding: 20px;
+    }
+    
+    nav {
+        background: rgb(198, 242, 255);
         padding: 20px;
     }
     
@@ -52,26 +57,25 @@
         padding: 2px;
         margin-right: 20px;
     }
-    /*Pseudocode classes*/
-    
-    li:first-child {
-        background-color: rgb(185, 214, 243);
-        border-radius: 4px;
-    }
     
     a {
         text-decoration: none;
         color: navy;
         font-family: "Varela", serif;
     }
+    /*Pseudocode classes*/
     
     a:hover {
-        background-color: rgb(253, 253, 149);
-        border-radius: 4px;
+        background-color: rgb(130, 179, 255);
+        color: white;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     footer {
-        background: rgb(250, 255, 199);
+        background: rgb(198, 242, 255);
+        /*rgb(250, 255, 199);*/
         text-align: center;
         position: fixed;
         left: 0;
