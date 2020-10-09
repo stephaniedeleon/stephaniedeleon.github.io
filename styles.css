@@ -21,14 +21,14 @@
     nav {
         display: flex;
         justify-content: flex-end;
-        padding-right: 8px;
+        padding: 30px, 10%;
         background: rgb(198, 242, 255);
         overflow: hidden;
     }
     
     ul.top-nav li {
         margin: 0;
-        padding: 0;
+        /*padding: 0;*/
         list-style-type: none;
         display: inline-block;
     }
@@ -48,22 +48,16 @@
         border-top-left-radius: 12px;
         border-bottom-right-radius: 12px;
         color: white;
-        padding: 9px 11px;
     }
     
     ul.top-nav li a.active {
         background-color: rgb(250, 255, 199);
         border-top-left-radius: 12px;
         border-bottom-right-radius: 12px;
-        padding: 9px 11px;
     }
     
     ul.top-nav li a.active:hover {
-        background-color: rgb(130, 179, 255);
-        border-top-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-        color: white;
-        padding: 9px 11px;
+        text-decoration: underline;
     }
     
     h1 {
@@ -101,6 +95,6 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        padding: 13px;
+        padding: 11px;
         font-family: "Alice", serif;
     }
