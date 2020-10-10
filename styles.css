@@ -1,6 +1,5 @@
     body {
         background-color: rgb(224, 254, 254);
-        /*Light Cyan*/
         font-family: Helvetica Neue, Helvetica, Arial;
         margin: 0;
         padding: 0;
@@ -9,6 +8,7 @@
     
     header {
         background: rgb(198, 242, 255);
+        /*rgb(217, 255, 255);*/
         text-align: center;
         height: 67px;
     }
@@ -23,11 +23,11 @@
         height: 66px;
         text-indent: -9999px;
         position: relative;
-        left: 80px;
+        left: 27px;
     }
     
     div.nav-container {
-        width: 95%;
+        /*width: 95%;*/
     }
     
     nav {
@@ -44,7 +44,7 @@
     
     ul.top-nav li {
         display: inline-block;
-        margin-left: 15px;
+        margin-left: 18px;
         position: relative;
         padding: 22px;
     }
@@ -53,7 +53,8 @@
         text-decoration: none;
         font-family: "Varela", serif;
         text-transform: uppercase;
-        padding: 12px 14px;
+        font-size: 14px;
+        padding: 8px 10px;
         color: navy;
         text-align: center;
         transition: all 0.4s ease 0s;
@@ -68,13 +69,13 @@
     }
     
     ul.top-nav li a.active {
-        background-color: rgb(250, 255, 199);
+        background-color: rgb(249, 249, 223);
         border-top-right-radius: 12px;
         border-bottom-left-radius: 12px;
     }
     
     ul.top-nav li a.active:hover {
-        background-color: rgb(250, 255, 199);
+        background-color: rgb(249, 249, 223);
         border-top-left-radius: 12px;
         border-bottom-right-radius: 12px;
         border-top-right-radius: 0px;
@@ -89,12 +90,10 @@
         text-align: center;
     }
     
-    section.main-section.home img {
+    section.main-section img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border-top-left-radius: 43px;
-        border-bottom-right-radius: 43px;
     }
     
     section.feature-box div {
@@ -105,8 +104,7 @@
     }
     
     section.feature-box.sales div {
-        background: cornflowerblue;
-        color: white;
+        background: rgb(224, 187, 228);
     }
     
     section.feature-box.closeouts div {
@@ -115,10 +113,11 @@
     
     footer {
         background: rgb(198, 242, 255);
+        font-size: 15px;
         text-align: center;
         position: fixed;
         bottom: 0;
         width: 100%;
-        padding: 11px;
+        padding: 5px;
         font-family: "Alice", serif;
     }
