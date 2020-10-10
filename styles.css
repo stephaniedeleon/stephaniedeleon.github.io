@@ -19,18 +19,18 @@
     
     .logo {
         float: left;
-        padding: 10px, 0;
+        padding: 20px;
         /*top/bottom, right/left*/
     }
     
     div.nav-container {
-        width: 90%;
+        width: 95%;
     }
     
     nav {
         display: flex;
-        /*justify-content: flex-end;
-        overflow: hidden;*/
+        /*justify-content: flex-end;*/
+        overflow: hidden;
         float: right;
     }
     
@@ -42,7 +42,9 @@
     
     ul.top-nav li {
         display: inline-block;
-        padding: 25px;
+        margin-left: 20px;
+        position: relative;
+        /*padding: 25px;*/
     }
     
     ul.top-nav li a {
