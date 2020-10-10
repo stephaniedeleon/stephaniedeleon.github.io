@@ -10,28 +10,23 @@
     header {
         background: rgb(198, 242, 255);
         text-align: center;
-        height: 80px;
+        height: 65px;
     }
-    /*header::after {
-        content: '';
-        display: table;
-        clear: both;
-    }*/
     
     a.logo {
-        padding: 20px;
+        justify-self: start;
+        padding: 30px;
         background-image: url("images/logo.png");
         background-repeat: no-repeat;
         background-size: 200px;
         border-top-right-radius: 12px;
         border-bottom-left-radius: 12px;
         display: inline-block;
-        width: 200px;
-        height: 30px;
+        width: 180px;
+        height: 25px;
         text-indent: -99999px;
         position: relative;
-        right: -80px;
-        /*top/bottom, right/left*/
+        top: 22px;
     }
     
     div.nav-container {
@@ -92,12 +87,12 @@
         flex-direction: row;
         text-align: center;
     }
-    /*classes*/
     
     section.feature-box div {
         margin: auto;
         width: 100px;
         font-weight: bold;
+        text-align: center;
     }
     
     section.feature-box.sales div {
