@@ -10,7 +10,7 @@
     header {
         background: rgb(198, 242, 255);
         text-align: center;
-        height: 50px;
+        height: 80px;
     }
     /*header::after {
         content: '';
@@ -19,7 +19,6 @@
     }*/
     
     a.logo {
-        float: left;
         padding: 20px;
         background-image: url("images/logo.png");
         background-repeat: no-repeat;
@@ -32,7 +31,6 @@
         text-indent: -99999px;
         position: relative;
         right: -80px;
-        top: -20px;
         /*top/bottom, right/left*/
     }
     
