@@ -69,16 +69,16 @@
     
     ul.top-nav li a.active {
         background-color: rgb(250, 255, 199);
-        border-top-left-radius: 12px;
-        border-bottom-right-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
     }
     
     ul.top-nav li a.active:hover {
         background-color: rgb(250, 255, 199);
-        border-top-right-radius: 12px;
-        border-bottom-left-radius: 12px;
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
         color: navy;
     }
     
