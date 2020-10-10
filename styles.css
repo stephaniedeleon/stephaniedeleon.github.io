@@ -8,42 +8,41 @@
     }
     
     header {
-        /*background: rgb(250, 255, 199);*/
-        padding: 0;
+        background: rgb(198, 242, 255);
     }
-    /*
-    div.home-header {
-        display: flex;
-        overflow: hidden;
+    
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
     }
     
     .logo {
-        cursor: pointer;
-        margin-right: auto;
+        float: left;
+        padding: 10px, 0;
+        /*top/bottom, right/left*/
     }
     
-    div.home-header h2 {
-        font-family: "Georgia", serif;
-        text-align: center;
+    div.nav-container {
+        width: 80%;
     }
-    
-    div.home-header h3 {
-        font-family: "Courier New", serif;
-        text-align: center;
-    } */
     
     nav {
-        display: flex;
+        /*display: flex;
         justify-content: flex-end;
-        background: rgb(198, 242, 255);
-        overflow: hidden;
+        overflow: hidden;*/
+        float: right;
     }
     
-    ul.top-nav li {
+    ul.top-nav {
         margin: 0;
         padding: 0;
         list-style-type: none;
+    }
+    
+    ul.top-nav li {
         display: inline-block;
+        padding: 15px, 23px;
     }
     
     ul.top-nav li a {
@@ -52,7 +51,7 @@
         padding: 12px 14px;
         color: navy;
         text-align: center;
-        transition: all 0.3s ease 0s;
+        transition: all 0.4s ease 0s;
     }
     /*Pseudocode classes*/
     
@@ -101,7 +100,7 @@
         background: rgb(198, 242, 255);
         /*rgb(250, 255, 199);*/
         text-align: center;
-        position: fixed;
+        /*position: fixed;*/
         bottom: 0;
         width: 100%;
         padding: 11px;
