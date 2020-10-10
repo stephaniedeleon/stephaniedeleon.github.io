@@ -17,9 +17,19 @@
         clear: both;
     }
     
-    .logo {
+    .logo a {
         float: left;
         padding: 20px;
+        background-image: url("images/logo.png");
+        background-repeat: no-repeat;
+        background-size: 150px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        display: inline-block;
+        width: 150px;
+        height: 20px;
+        text-indent: -99999px;
+        position: relative;
         /*top/bottom, right/left*/
     }
     
@@ -44,7 +54,7 @@
         display: inline-block;
         margin-left: 20px;
         position: relative;
-        /*padding: 25px;*/
+        padding: 22px;
     }
     
     ul.top-nav li a {
