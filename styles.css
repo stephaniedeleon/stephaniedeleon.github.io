@@ -52,6 +52,7 @@
     ul.top-nav li a {
         text-decoration: none;
         font-family: "Varela", serif;
+        text-transform: uppercase;
         padding: 12px 14px;
         color: navy;
         text-align: center;
@@ -92,8 +93,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border-top-left-radius: 70px;
-        border-bottom-right-radius: 70px;
+        border-top-left-radius: 43px;
+        border-bottom-right-radius: 43px;
     }
     
     section.feature-box div {
