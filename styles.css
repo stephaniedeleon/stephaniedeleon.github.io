@@ -123,8 +123,8 @@
         }
         .toggle-menu {
             display: block;
-            margin-top: 18px;
-            margin-right: 24px;
+            padding-top: 18px;
+            padding-right: 24px;
         }
     }
     
@@ -163,12 +163,14 @@
     }
     
     section.main-section img {
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         border-top-left-radius: 70px;
         border-bottom-right-radius: 70px;
+        width: 375px;
+        height: 150px;
     }
     
     section.feature-box div {
