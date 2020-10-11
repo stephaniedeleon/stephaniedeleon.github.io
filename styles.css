@@ -1,5 +1,5 @@
     body {
-        background-color: rgb(224, 254, 254);
+        background-color: rgb(234, 255, 255);
         font-family: Helvetica Neue, Helvetica, Arial;
         margin: 0;
         padding: 0;
@@ -7,13 +7,13 @@
     }
     
     header {
-        background: rgb(198, 242, 255);
-        /*rgb(217, 255, 255);*/
+        background: rgb(217, 255, 255);
         text-align: center;
         height: 67px;
+        overflow: hidden;
     }
     
-    div.logo a {
+    .logo a {
         float: left;
         background-image: url("images/logo.png");
         background-repeat: no-repeat;
@@ -23,33 +23,35 @@
         height: 66px;
         text-indent: -9999px;
         position: relative;
-        left: 27px;
+        left: 31px;
     }
     
-    div.nav-container {
-        /*width: 95%;*/
+    .top-nav {
+        width: 98%;
     }
     
     nav {
         display: flex;
+        align-items: center;
         overflow: hidden;
         float: right;
     }
     
-    ul.top-nav {
+    .nav-links {
         margin: 0;
         padding: 0;
         list-style-type: none;
     }
     
-    ul.top-nav li {
+    .nav-links li {
         display: inline-block;
-        margin-left: 18px;
+        margin-left: 12px;
+        margin-right: 12px;
         position: relative;
         padding: 22px;
     }
     
-    ul.top-nav li a {
+    .nav-links li a {
         text-decoration: none;
         font-family: "Varela", serif;
         text-transform: uppercase;
@@ -61,26 +63,96 @@
     }
     /*Pseudocode classes*/
     
-    ul.top-nav li a:hover {
+    .nav-links li a:hover {
         background-color: rgb(130, 179, 255);
         border-top-left-radius: 12px;
         border-bottom-right-radius: 12px;
         color: white;
     }
     
-    ul.top-nav li a.active {
+    .nav-links li a.active {
         background-color: rgb(249, 249, 223);
         border-top-right-radius: 12px;
         border-bottom-left-radius: 12px;
     }
     
-    ul.top-nav li a.active:hover {
-        background-color: rgb(249, 249, 223);
+    .nav-links li a.active:hover {
+        background-color: rgb(130, 179, 255);
         border-top-left-radius: 12px;
         border-bottom-right-radius: 12px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 0px;
-        color: navy;
+        color: white;
+    }
+    /*Toggle Menu for mobile and small screens*/
+    
+    .toggle-menu {
+        display: none;
+        float: right;
+        cursor: pointer;
+    }
+    
+    .toggle-menu div {
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: navy;
+        transition: all 0.3s ease;
+    }
+    
+    @media screen and (max-width: 800px) {
+        body {
+            overflow-x: hidden;
+        }
+        .nav-links {
+            position: absolute;
+            right: 0;
+            height: 92vh;
+            top: 67px;
+            background: rgb(217, 255, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            transform: translateX(100%);
+            transition: transform 0.4s ease-in-out;
+        }
+        .nav-links li {
+            top: 70px;
+            opacity: 0;
+        }
+        .toggle-menu {
+            display: block;
+            margin-top: 18px;
+            margin-right: 24px;
+        }
+    }
+    
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+    .toggleExit .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .toggleExit .line2 {
+        opacity: 0;
+    }
+    
+    .toggleExit .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
     
     section {
@@ -94,6 +166,9 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
     }
     
     section.feature-box div {
@@ -112,7 +187,7 @@
     }
     
     footer {
-        background: rgb(198, 242, 255);
+        background: rgb(217, 255, 255);
         font-size: 15px;
         text-align: center;
         position: fixed;
