@@ -96,13 +96,14 @@
         width: 25px;
         height: 3px;
         margin: 5px;
+        border-radius: 3px;
         background-color: navy;
         transition: all 0.3s ease;
     }
     
     @media screen and (max-width: 800px) {
         body {
-            overflow-x: hidden;
+            overflow: hidden;
         }
         .nav-links {
             position: absolute;
