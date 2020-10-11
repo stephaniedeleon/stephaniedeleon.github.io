@@ -3,14 +3,12 @@
         font-family: Helvetica Neue, Helvetica, Arial;
         margin: 0;
         color: navy;
-        overflow: hidden;
     }
     
     header {
         background: rgb(217, 255, 255);
         text-align: center;
         height: 67px;
-        overflow: hidden;
     }
     
     .logo a {
@@ -24,6 +22,7 @@
         text-indent: -9999px;
         position: relative;
         left: 31px;
+        bottom: 1px;
     }
     
     .top-nav {
@@ -103,7 +102,7 @@
     
     @media screen and (max-width: 800px) {
         body {
-            overflow: hidden;
+            overflow-x: hidden;
         }
         .nav-links {
             position: absolute;
