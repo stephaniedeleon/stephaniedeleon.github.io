@@ -123,6 +123,8 @@
         }
         .toggle-menu {
             display: block;
+            margin-top: 18px;
+            margin-right: 24px;
         }
     }
     
