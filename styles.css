@@ -10,6 +10,7 @@
         text-align: center;
         height: 67px;
     }
+    /* Logo w/ Link in Nav Bar */
     
     .logo a {
         float: left;
@@ -24,6 +25,7 @@
         left: 31px;
         bottom: 1px;
     }
+    /* Nav Bar */
     
     .top-nav {
         width: 98%;
@@ -60,7 +62,6 @@
         text-align: center;
         transition: all 0.4s ease 0s;
     }
-    /*Pseudocode classes*/
     
     .nav-links li a:hover {
         background-color: rgb(130, 179, 255);
@@ -99,6 +100,7 @@
         background-color: navy;
         transition: all 0.3s ease;
     }
+    /*To activate the toggle menu nav bar*/
     
     @media screen and (max-width: 800px) {
         body {
@@ -127,6 +129,7 @@
             padding-right: 24px;
         }
     }
+    /*Nav bar toggle menu animation*/
     
     .nav-active {
         transform: translateX(0%);
@@ -154,6 +157,7 @@
     .toggleExit .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+    /* Main section */
     
     section {
         padding: 20px;
@@ -161,6 +165,7 @@
         flex-direction: row;
         text-align: center;
     }
+    /* Main logo */
     
     section.main-section img {
         display: flex;
