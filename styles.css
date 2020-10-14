@@ -139,6 +139,12 @@
             padding-right: 24px;
         }
     }
+    
+    @media screen and (max-width: 600px) {
+        .nav-links {
+            overflow-x: hidden;
+        }
+    }
     /*Nav bar toggle menu animation*/
     
     .nav-active {
