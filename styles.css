@@ -29,7 +29,7 @@
         height: 51.8px;
         text-indent: -9999px;
         position: relative;
-        top: 5px;
+        top: 4px;
         left: 31px;
     }
     /* Nav Bar */
@@ -114,6 +114,11 @@
     @media screen and (max-width: 800px) {
         body {
             overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        .top-nav {
+            overflow-x: hidden;
+            overflow-y: hidden;
         }
         .nav-links {
             overflow-x: hidden;
@@ -137,18 +142,6 @@
             display: block;
             padding-top: 15px;
             padding-right: 24px;
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        nav {
-            overflow-x: hidden;
-        }
-        div.nav-links {
-            overflow-x: hidden;
-        }
-        div.nav-links li {
-            overflow-x: hidden;
         }
     }
     /*Nav bar toggle menu animation*/
