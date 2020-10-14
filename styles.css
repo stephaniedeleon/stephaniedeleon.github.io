@@ -141,7 +141,13 @@
     }
     
     @media screen and (max-width: 600px) {
-        .nav-links {
+        nav {
+            overflow-x: hidden;
+        }
+        div.nav-links {
+            overflow-x: hidden;
+        }
+        div.nav-links li {
             overflow-x: hidden;
         }
     }
