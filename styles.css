@@ -30,7 +30,7 @@
         text-indent: -9999px;
         position: relative;
         top: 5px;
-        left: 33px;
+        left: 31px;
     }
     /* Nav Bar */
     
@@ -116,41 +116,12 @@
             overflow-x: hidden;
         }
         .nav-links {
-            position: absolute;
-            right: 0;
-            height: 92vh;
-            top: 60px;
-            background: #EAEBFF;
-            ;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 50%;
-            transform: translateX(100%);
-            transition: transform 0.4s ease-in-out;
-        }
-        .nav-links li {
-            top: 70px;
-            opacity: 0;
-        }
-        .toggle-menu {
-            display: block;
-            padding-top: 14px;
-            padding-right: 24px;
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        body {
             overflow-x: hidden;
-        }
-        /*.nav-links {
             position: absolute;
             right: 0;
             height: 92vh;
             top: 60px;
             background: #EAEBFF;
-            ;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -164,9 +135,9 @@
         }
         .toggle-menu {
             display: block;
-            padding-top: 14px;
+            padding-top: 15px;
             padding-right: 24px;
-        }*/
+        }
     }
     /*Nav bar toggle menu animation*/
     
@@ -200,6 +171,7 @@
     /* Main logo */
     
     section.main-section img {
+        margin-top: 4vh;
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -211,31 +183,28 @@
     }
     
     section.about-section {
-        background-color: #99eeff;
+        /*background-color: #99eeff;*/
         text-align: center;
         padding: 20px
     }
     
-    section.feature-box {
+    section.blog-box {
         padding: 20px;
-        background-color: #b7f2ff;
+        /*background-color: #b7f2ff;*/
         display: flex;
     }
     
-    section.feature-box div {
+    section.blog-box div {
         margin: auto;
         width: 120px;
         text-align: center;
         font-weight: bold;
-    }
-    
-    section.feature-box.blog div {
         flex-direction: row;
         background: #FFF5FB;
     }
     
     section.proj-featured {
-        background-color: #FFF5FB;
+        /*background-color: #FFF5FB;*/
         padding: 20px;
         display: block;
         height: 4vh;
@@ -249,7 +218,7 @@
     }
     
     section.blog-featured {
-        background-color: #FFF5FB;
+        /*background-color: #FFF5FB;*/
         display: block;
         height: 4vh;
         padding: 20px;
@@ -263,7 +232,7 @@
     }
     
     section.project-section {
-        background-color: #99eeff;
+        /*background-color: #99eeff;*/
         text-align: center;
         padding: 20px
     }
