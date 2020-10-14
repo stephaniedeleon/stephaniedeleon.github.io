@@ -116,12 +116,10 @@
             overflow-x: hidden;
             overflow-y: scroll;
         }
-        .top-nav {
+        .wrapper {
             overflow-x: hidden;
-            overflow-y: hidden;
         }
         .nav-links {
-            overflow-x: hidden;
             position: absolute;
             right: 0;
             height: 92vh;
