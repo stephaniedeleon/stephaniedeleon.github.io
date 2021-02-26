@@ -1,285 +1,336 @@
-    body {
-        background-color: rgb(217, 255, 255);
-        font-family: Helvetica Neue, Helvetica, Arial;
-        margin: 0;
-        color: navy;
-    }
-    
-    header {
-        background: #EAEBFF;
-        text-align: center;
-        height: 60px;
-    }
-    /* Logo w/ Link in Nav Bar */
-    
-    .logo a {
-        float: left;
-        background-image: url("images/logo.png");
-        background-repeat: no-repeat;
-        background-size: 185px;
-        display: inline-block;
-        width: 185px;
-        height: 51.8px;
-        text-indent: -9999px;
-        position: relative;
-        top: 4px;
-        left: 31px;
-    }
-    /* Nav Bar */
-    
-    .top-nav {
-        width: 98%;
-    }
-    
-    nav {
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        float: right;
-    }
-    
-    .nav-links {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-    
-    .nav-links li {
-        display: inline-block;
-        margin-left: 12px;
-        margin-right: 12px;
-        position: relative;
-        padding: 20px;
-    }
-    
-    .nav-links li a {
-        text-decoration: none;
-        font-family: "Varela", serif;
-        text-transform: uppercase;
-        font-size: 14px;
-        padding: 8px 10px;
-        color: navy;
-        text-align: center;
-        transition: all 0.4s ease 0s;
-    }
-    
-    .nav-links li a:hover {
-        background-color: #BDB5FF;
-        border-top-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-        color: white;
-    }
-    
-    .nav-links li a.active {
-        background-color: rgb(249, 249, 223);
-        border-top-right-radius: 12px;
-        border-bottom-left-radius: 12px;
-    }
-    
-    .nav-links li a.active:hover {
-        background-color: #BDB5FF;
-        /* background-color: rgb(130, 179, 255);*/
-        border-top-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-        color: white;
-    }
-    /*Toggle Menu for mobile and small screens*/
-    
-    .toggle-menu {
-        display: none;
-        float: right;
-        cursor: pointer;
-    }
-    
-    .toggle-menu div {
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-        border-radius: 5px;
-        background-color: navy;
-        transition: all 0.3s ease;
-    }
-    /*To activate the toggle menu nav bar*/
-    
-    @media screen and (max-width: 800px) {
         body {
-            overflow-x: hidden;
-            overflow-y: scroll;
+            background-color: rgb(217, 255, 255);
+            font-family: Helvetica Neue, Helvetica, Arial;
+            margin: 0;
+            color: navy;
         }
-        .wrapper {
-            overflow-x: hidden;
-        }
-        .nav-links {
-            position: absolute;
-            right: 0;
-            height: 92vh;
-            top: 60px;
+        
+        header {
             background: #EAEBFF;
+            text-align: center;
+            height: 60px;
+        }
+        /* Logo w/ Link in Nav Bar */
+        
+        .logo a {
+            float: left;
+            background-image: url("images/logo.png");
+            background-repeat: no-repeat;
+            background-size: 185px;
+            display: inline-block;
+            width: 185px;
+            height: 51.8px;
+            text-indent: -9999px;
+            position: relative;
+            top: 4px;
+            left: 31px;
+        }
+        /* Nav Bar */
+        
+        .top-nav {
+            width: 98%;
+        }
+        
+        nav {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            width: 50%;
-            transform: translateX(100%);
-            transition: transform 0.4s ease-in-out;
+            overflow: hidden;
+            float: right;
         }
+        
+        .nav-links {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
         .nav-links li {
-            top: 70px;
-            opacity: 0;
+            display: inline-block;
+            margin-left: 12px;
+            margin-right: 12px;
+            position: relative;
+            padding: 20px;
         }
+        
+        .nav-links li a {
+            text-decoration: none;
+            font-family: "Varela", serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding: 8px 10px;
+            color: navy;
+            text-align: center;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .nav-links li a:hover {
+            background-color: #BDB5FF;
+            border-top-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            color: white;
+        }
+        
+        .nav-links li a.active {
+            background-color: rgb(249, 249, 223);
+            border-top-right-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+        
+        .nav-links li a.active:hover {
+            background-color: #BDB5FF;
+            border-top-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            color: white;
+        }
+        /*Toggle Menu for mobile and small screens*/
+        
         .toggle-menu {
-            display: block;
-            padding-top: 15px;
-            padding-right: 24px;
+            display: none;
+            float: right;
+            cursor: pointer;
         }
-    }
-    /*Nav bar toggle menu animation*/
-    
-    .nav-active {
-        transform: translateX(0%);
-    }
-    
-    @keyframes navLinkFade {
-        from {
+        
+        .toggle-menu div {
+            width: 25px;
+            height: 3px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: navy;
+            transition: all 0.3s ease;
+        }
+        /*To activate the toggle menu nav bar*/
+        
+        @media screen and (max-width: 920px) {
+            body {
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+            header {
+                overflow-x: hidden;
+            }
+            .wrapper {
+                overflow-x: hidden;
+            }
+            .nav-links {
+                position: absolute;
+                right: 0;
+                height: 92vh;
+                top: 60px;
+                background: #EAEBFF;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                transform: translateX(100%);
+                transition: transform 0.4s ease-in-out;
+            }
+            .nav-links li {
+                top: 70px;
+                opacity: 0;
+            }
+            .toggle-menu {
+                display: block;
+                padding-top: 15px;
+                padding-right: 24px;
+            }
+        }
+        /*Nav bar toggle menu animation*/
+        
+        .nav-active {
+            transform: translateX(0%);
+        }
+        
+        @keyframes navLinkFade {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        
+        .toggleExit .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .toggleExit .line2 {
             opacity: 0;
-            transform: translateX(50px);
         }
-        to {
-            opacity: 1;
-            transform: translateX(0px);
+        
+        .toggleExit .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
-    }
-    
-    .toggleExit .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    
-    .toggleExit .line2 {
-        opacity: 0;
-    }
-    
-    .toggleExit .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-    /* Main section */
-    /* Main logo */
-    
-    section.main-section img {
-        margin-top: 4vh;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-top-left-radius: 70px;
-        border-bottom-right-radius: 70px;
-        width: 375px;
-        height: 150px;
-    }
-    /* About section */
-    
-    .btn.learn-more {
-        border-width: 0.5px;
-        border-color: #BDB5FF;
-        background-color: white;
-        padding: 6px 20px;
-        font-size: 13px;
-        cursor: pointer;
-        border-radius: 20px;
-        font-family: "Varela", serif;
-        text-transform: uppercase;
-        color: navy;
-    }
-    
-    .learn-more:hover {
-        background: #BDB5FF;
-        color: white;
-    }
-    
-    .btn.learn-more a {
-        text-decoration: none;
-    }
-    
-    .blog-container {
-        position: relative;
-        width: 50%;
-    }
-    
-    .btn-blog {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        border: none;
-        background-color: white;
-        padding: 6px 20px;
-        font-size: 13px;
-        cursor: pointer;
-        border-radius: 5px;
-        font-family: "Varela", serif;
-        text-transform: uppercase;
-        color: navy;
-    }
-    
-    .btn-blog:hover {
-        background: #82B3FF;
-        color: white;
-    }
-    
-    .btn-blog a {
-        text-decoration: none;
-    }
-    
-    .btn-blog:hover {
-        background: #82B3FF;
-        color: white;
-        transition: all 0.4s ease 0s;
-        border-radius: 20px;
-    }
-    
-    .contact {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        text-align: center;
-    }
-    
-    .contact li {
-        /*display: inline-block;*/
-        margin-left: 12px;
-        margin-right: 12px;
-        position: relative;
-        padding-bottom: 20px;
-    }
-    
-    .contact li a {
-        text-decoration: none;
-        font-size: 16px;
-        color: navy;
-        text-align: center;
-        padding: 6px 8px;
-        background-color: rgb(249, 249, 223);
-        border-top-right-radius: 8px;
-        border-bottom-left-radius: 8px;
-    }
-    
-    .contact li a:hover {
-        text-decoration: underline;
-        font-weight: bolder;
-    }
-    
-    footer {
-        background: #EAEBFF;
-        font-size: 15px;
-        text-align: center;
-        bottom: 0;
-        width: 100%;
-        padding: 5px;
-        /*20px with links*/
-    }
-    
-    footer div {
-        font-family: "Alice", serif;
-        font-size: 16px;
-    }
+        
+        .contact {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+        
+        .contact li {
+            /*display: inline-block;*/
+            margin-left: 12px;
+            margin-right: 12px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        .contact li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: navy;
+            text-align: center;
+            padding: 6px 8px;
+            background-color: rgb(249, 249, 223);
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        
+        .contact li a:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+        
+        footer {
+            background: #EAEBFF;
+            font-size: 15px;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            padding: 5px;
+            /*20px with links*/
+        }
+        
+        footer div {
+            font-family: "Alice", serif;
+            font-size: 16px;
+        }
+        /* Main page */
+        /* Main logo */
+        
+        section.main-section img {
+            margin-top: 4vh;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-top-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+            width: 375px;
+            height: 150px;
+        }
+        /* About in Main page */
+        
+        .left-main img {
+            display: flex;
+            margin-left: auto;
+            margin-right: 20px;
+            text-align: center;
+            width: 346px;
+            height: 286px;
+        }
+        
+        @media screen and (max-width: 1200px) {
+            .left-main img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        .btn.learn-more {
+            border-width: 0.5px;
+            border-color: #BDB5FF;
+            background-color: white;
+            padding: 6px 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-family: "Varela", serif;
+            text-transform: uppercase;
+            color: navy;
+        }
+        
+        .learn-more:hover {
+            background: #BDB5FF;
+            color: white;
+        }
+        
+        .btn.learn-more a {
+            text-decoration: none;
+        }
+        
+        .btn-blog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border: none;
+            background-color: white;
+            padding: 6px 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: "Varela", serif;
+            text-transform: uppercase;
+            color: navy;
+        }
+        
+        .btn-blog:hover {
+            background: #82B3FF;
+            color: white;
+        }
+        
+        .btn-blog a {
+            text-decoration: none;
+        }
+        
+        .btn-blog:hover {
+            background: #82B3FF;
+            color: white;
+            transition: all 0.4s ease 0s;
+            border-radius: 20px;
+        }
+        /*About Page*/
+        
+        .about-row {
+            margin-top: 4vh;
+        }
+        
+        .about-column {
+            float: left;
+            padding: 10px;
+        }
+        
+        .left {
+            width: 40%;
+        }
+        
+        .left img {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-top-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+            width: 336px;
+            height: 448px;
+        }
+        
+        .right {
+            display: flex;
+            margin-top: 5vh;
+            width: 60%;
+        }
+        /*To activate the centering of the columns for the about sections*/
+        
+        @media screen and (max-width: 1000px) {
+            .about-column {
+                width: 100%;
+            }
+        }
