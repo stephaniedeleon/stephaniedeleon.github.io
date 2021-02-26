@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+
 <html>
+
+<!-- Main Page -->
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love, Panini</title>
     <link rel="stylesheet " href="styles.css " type="text/css ">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet " href="https://fonts.googleapis.com/css?family=Varela|Petit Formal Script|Alice">
 </head>
 
@@ -15,15 +20,12 @@
         <div class="top-nav">
             <div class="logo"><a href="index.html">Love Panini Logo</a></div>
             <nav>
-                <div id="wrapper">
-                    <ul class="nav-links">
-                        <li><a class="active" href="index.html ">Home</a></li>
-                        <li><a href="pages/about.html ">About</a></li>
-                        <li><a href="pages/blog.html ">Blog</a></li>
-                        <li><a href="pages/projects.html ">Projects</a></li>
-                    </ul>
-                </div>
-
+                <ul class="nav-links">
+                    <li><a class="active" href="index.html ">Home</a></li>
+                    <li><a href="pages/about.html ">About</a></li>
+                    <li><a href="pages/blog.html ">Blog</a></li>
+                    <li><a href="pages/projects.html ">Projects</a></li>
+                </ul>
                 <div class="toggle-menu">
                     <div class=line1></div>
                     <div class=line2></div>
@@ -36,25 +38,83 @@
     <section class="main-section">
         <img src="images/main-logo.png" alt="main-logo">
     </section>
-    <section class="about-section">
-        <h3>My Mission</h3>
-    </section>
-    <section class="blog-box">
-        <div>Wellness</div>
-        <div>Food</div>
-        <div>Tech</div>
-        <div>Books</div>
-    </section>
-    <section class="proj-featured">
-        <div>Project Article</div>
-    </section>
-    <section class="blog-featured">
-        <div>Blog Article</div>
-    </section>
-    <section class="project-section">
-        <h3>My Personal Projects</h3>
-    </section>
-    <footer>Coded with love by Stephanie De Leon</footer>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="about">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">About</h3>
+
+            <div class="w3-padding-top-24">
+                <div class="w3-third">
+                    <img src="images/bitmoji-main.png" style="width:85%" alt="bitmoji">
+                </div>
+
+                <div class="w3-twothird">
+                    <div class="about-text">
+                        <h3>Hello!</h3>
+                        <p>My name is Stephanie De Leon. I created Love, Panini with the goal to guide people into a more fulfilling life, to inspire women in technology, and to share my passions to the world.</p>
+                        <button class="btn learn-more"><a href="pages/about.html ">Learn more</a> &#x2192; </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Section -->
+        <div class="w3-container w3-padding-32" id="project">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">My Projects</h3>
+        </div>
+
+        <!-- Blog Section -->
+        <div class="w3-container w3-padding-32" id="blog">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">The Blog</h3>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom" id="blog-container">
+                <div class="w3-display-container">
+                    <button class="btn-blog"><a href="pages/blog.html ">Wellness</a></button>
+                    <img src="images/wellness.jpg" alt="Wellness" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom" id="blog-container">
+                <div class="w3-display-container">
+                    <button class="btn-blog"><a href="pages/blog.html ">Food</a></button>
+                    <img src="images/food.jpg" alt="Food" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom" id="blog-container">
+                <div class="w3-display-container">
+                    <button class="btn-blog"><a href="pages/blog.html ">Tech</a></button>
+                    <img src="images/tech.jpg" alt="Tech" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom" id="blog-container">
+                <div class="w3-display-container">
+                    <button class="btn-blog"><a href="pages/blog.html ">Books</a></button>
+                    <img src="images/book.jpg" alt="Books" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-32" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Contact Me</h3>
+        </div>
+
+        <ul class="contact">
+            <li><a href="https://www.linkedin.com/in/stephanie-de-leon-a902b717a/">LinkedIn</a></li>
+            <li><a href="https://github.com/stephaniedeleon">GitHub</a></li>
+            <li><a href="mailto:stephaniedeleon516@gmail.com">Email</a></li>
+        </ul>
+
+        <!-- End page content -->
+    </div>
+
+    <footer>
+        <div>Coded with love by Stephanie De Leon</div>
+    </footer>
 </body>
 
 <script src="script.js"></script>
