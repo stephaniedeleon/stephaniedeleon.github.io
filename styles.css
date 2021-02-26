@@ -107,7 +107,7 @@
                 overflow-x: hidden;
                 overflow-y: scroll;
             }
-            header {
+            nav {
                 overflow-x: hidden;
             }
             .wrapper {
@@ -229,7 +229,7 @@
         .left-main img {
             display: flex;
             margin-left: auto;
-            margin-right: 20px;
+            margin-right: auto;
             text-align: center;
             width: 346px;
             height: 286px;
