@@ -77,10 +77,6 @@ header {
 /*To activate the toggle menu nav bar*/
 
 @media screen and (max-width: 920px) {
-    body {
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
     .nav-links li {
         opacity: 0;
     }
