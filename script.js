@@ -4,8 +4,6 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
 
     toggleButton.addEventListener('click', () => {
-        //Toggle Nav
-        nav.classList.toggle('nav-active');
 
         //Animate Links
         navLinks.forEach((link, index) => {

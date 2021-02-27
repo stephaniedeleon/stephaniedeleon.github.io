@@ -1,3 +1,5 @@
+/* General */
+
 body {
     background-color: rgb(217, 255, 255);
     font-family: Helvetica Neue, Helvetica, Arial;
@@ -6,44 +8,11 @@ body {
 }
 
 header {
-    background: #EAEBFF;
     text-align: center;
-    height: 60px;
-}
-
-
-/* Logo w/ Link in Nav Bar */
-
-.logo a {
-    float: left;
-    background-image: url("images/logo.png");
-    background-repeat: no-repeat;
-    background-size: 185px;
-    display: inline-block;
-    width: 185px;
-    height: 51.8px;
-    text-indent: -9999px;
-    position: relative;
-    top: 4px;
-    left: 31px;
 }
 
 
 /* Nav Bar */
-
-nav {
-    width: 98%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.nav-links {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    float: right;
-}
 
 .nav-links li {
     display: inline-block;
@@ -57,8 +26,8 @@ nav {
     text-decoration: none;
     font-family: "Varela", serif;
     text-transform: uppercase;
-    font-size: 14px;
-    padding: 8px 10px;
+    font-size: 15px;
+    padding: 9px 11px;
     color: navy;
     text-align: center;
     transition: all 0.4s ease 0s;
@@ -108,55 +77,30 @@ nav {
 /*To activate the toggle menu nav bar*/
 
 @media screen and (max-width: 920px) {
-    body header nav {
+    body {
         overflow-x: hidden;
-    }
-    .nav-links {
-        position: absolute;
-        right: 0;
-        height: 92vh;
-        top: 60px;
-        background: #EAEBFF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.4s ease-in-out;
+        overflow-y: scroll;
     }
     .nav-links li {
-        top: 70px;
         opacity: 0;
     }
     .toggle-menu {
         display: block;
-        padding-top: 15px;
         padding-right: 24px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    html,
-    body {
-        overflow-x: hidden;
     }
 }
 
 
 /*Nav bar toggle menu animation*/
 
-.nav-active {
-    transform: translateX(0%);
-}
-
 @keyframes navLinkFade {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateY(0px);
     }
     to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(5px);
     }
 }
 
@@ -228,7 +172,7 @@ footer div {
 /* Main logo */
 
 section.main-section img {
-    margin-top: 4vh;
+    margin-top: 5vh;
     display: flex;
     margin-left: auto;
     margin-right: auto;
