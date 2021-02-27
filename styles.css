@@ -31,15 +31,11 @@ header {
 
 /* Nav Bar */
 
-.top-nav {
-    width: 98%;
-}
-
 nav {
+    width: 98%;
     display: flex;
     align-items: center;
     overflow: hidden;
-    /*float: right;*/
 }
 
 .nav-links {
@@ -112,18 +108,10 @@ nav {
 /*To activate the toggle menu nav bar*/
 
 @media screen and (max-width: 920px) {
-    /*body {
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
-    nav {
+    body header nav {
         overflow-x: hidden;
     }
-    .wrapper {
-        overflow-x: hidden;
-    }*/
     .nav-links {
-        overflow-x: hidden;
         position: absolute;
         right: 0;
         height: 92vh;
@@ -147,9 +135,10 @@ nav {
     }
 }
 
-@media screen and (max-width: 767px) {
-    header {
-        overflow-x: hidden;
+@media screen and (max-width: 768px) {
+    body.modal-open {
+        overflow: hidden;
+        position: fixed;
     }
 }
 
@@ -182,6 +171,9 @@ nav {
 .toggleExit .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+
+/*Contact Section*/
 
 .contact {
     margin: 0;
