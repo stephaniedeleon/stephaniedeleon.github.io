@@ -136,9 +136,9 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    body.modal-open {
-        overflow: hidden;
-        position: fixed;
+    html,
+    body {
+        overflow-x: hidden;
     }
 }
 
