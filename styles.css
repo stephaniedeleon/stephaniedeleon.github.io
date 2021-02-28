@@ -203,6 +203,10 @@
             }
             /* About in Main page */
             
+            .col-sm-4 img {
+                height: 200px;
+            }
+            
             .col-sm-4 {
                 text-align: center;
             }
