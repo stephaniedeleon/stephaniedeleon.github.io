@@ -166,6 +166,10 @@
         /***************** Main page ******************/
         /*Carousel*/
         
+        .carousel-inner {
+            margin-bottom: 40px;
+        }
+        
         .carousel-inner img {
             width: 100%;
             /* Set width to 100% */
@@ -185,30 +189,16 @@
             color: #1f78fe;
         }
         
-        @media (max-width: 600px) {
+        @media (max-width: 787px) {
             .carousel-inner img {
-                height: 100%;
                 /* Set width to 100% */
                 margin: auto;
             }
-        }
-        /* About in Main page */
-        
-        .left-main img {
-            display: flex;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            width: 346px;
-            height: 286px;
-        }
-        
-        @media screen and (max-width: 1200px) {
-            .left-main img {
-                margin-left: auto;
-                margin-right: auto;
+            .carousel-inner {
+                margin-bottom: 0px;
             }
         }
+        /* Buttons */
         
         .btn.learn-more {
             border-width: 0.5px;
@@ -235,6 +225,33 @@
         .btn.learn-more a {
             text-decoration: none;
         }
+        
+        @media (max-width: 1500px) {
+            .btn.learn-more {
+                border-width: 0.5px;
+                padding: 6px 10px;
+                font-size: 13px;
+            }
+        }
+        /* About in Main page */
+        
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        /* Projects in Main page */
+        
+        .logo-small {
+            color: #6666f4;
+            font-size: 50px;
+        }
+        
+        .row a:hover {
+            color: #1f78fe;
+        }
+        /* Blog Section in Main Page */
         
         .btn-blog {
             position: absolute;
