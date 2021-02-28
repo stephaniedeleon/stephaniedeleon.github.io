@@ -70,7 +70,7 @@
         }
         /*To activate the toggle menu nav bar*/
         
-        @media screen and (max-width: 920px) {
+        @media screen and (max-width: 980px) {
             .nav-links li {
                 opacity: 0;
             }
@@ -79,7 +79,7 @@
                 padding-right: 24px;
             }
         }
-        /*Nav bar toggle menu animation*/
+        /*Nav bar toggle menu animation */
         
         @keyframes navLinkFade {
             from {
@@ -103,46 +103,13 @@
         .toggleExit .line3 {
             transform: rotate(45deg) translate(-5px, -6px);
         }
-        /*Contact Section*/
-        
-        .contact {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            text-align: center;
-        }
-        
-        .contact li {
-            margin-left: 12px;
-            margin-right: 12px;
-            position: relative;
-            padding-bottom: 20px;
-        }
-        
-        .contact li a {
-            text-decoration: none;
-            font-size: 16px;
-            color: navy;
-            text-align: center;
-            padding: 6px 8px;
-            background-color: rgb(249, 249, 223);
-            border-top-right-radius: 8px;
-            border-bottom-left-radius: 8px;
-        }
-        
-        .contact li a:hover {
-            text-decoration: underline;
-            font-weight: bolder;
-        }
+        /* Contact & Footer Section */
         
         footer {
             background: #EAEBFF;
-            font-size: 15px;
             text-align: center;
             bottom: 0;
-            width: 100%;
             padding: 5px;
-            /*20px with links*/
         }
         
         footer a {
@@ -171,10 +138,6 @@
         /***************** Main page ******************/
         /*Carousel*/
         
-        .carousel-inner {
-            margin-bottom: 40px;
-        }
-        
         .carousel-inner img {
             width: 100%;
             /* Set width to 100% */
@@ -194,13 +157,18 @@
             color: #1f78fe;
         }
         
-        @media (max-width: 787px) {
-            .carousel-inner img {
-                /* Set width to 100% */
-                margin: auto;
+        @media (max-width: 1000px) {
+            .caption {
+                padding-top: 5vh;
             }
-            .carousel-inner {
-                margin-bottom: 0px;
+            .carousel-caption button {
+                opacity: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-caption h4 {
+                font-size: medium;
             }
         }
         /* Buttons */
@@ -230,26 +198,24 @@
         .btn.learn-more a {
             text-decoration: none;
         }
-        
-        @media (max-width: 1500px) {
-            .btn.learn-more {
-                border-width: 0.5px;
-                padding: 6px 10px;
-                font-size: 13px;
-            }
-        }
         /* About in Main page */
         
         @media screen and (max-width: 768px) {
             .col-sm-4 {
                 text-align: center;
-                margin: 25px 0;
+                margin-bottom: 25px;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .col-sm-8 {
+                text-align: center;
             }
         }
         /* Projects in Main page */
         
         .logo-small {
-            color: #6666f4;
+            color: #a69cfe;
             font-size: 50px;
         }
         
@@ -290,7 +256,7 @@
             transition: all 0.4s ease 0s;
             border-radius: 20px;
         }
-        /*About Page*/
+        /***************** About Page ******************/
         
         .about-row {
             margin-top: 4vh;
