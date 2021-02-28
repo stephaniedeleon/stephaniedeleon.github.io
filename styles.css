@@ -145,9 +145,14 @@
             /*20px with links*/
         }
         
+        footer a {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
         footer div {
             font-family: "Alice", serif;
-            font-size: 16px;
+            font-size: 18px;
         }
         /* Main logo for each page */
         
