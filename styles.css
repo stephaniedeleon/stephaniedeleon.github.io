@@ -306,7 +306,7 @@ footer div {
 }
 
 
-/***************** Blog Page ******************/
+/***************** Projects Page ******************/
 
 .project li {
     text-align: center;
@@ -321,4 +321,18 @@ footer div {
 
 .project li a:hover {
     color: navy;
+}
+
+
+/***************** Blog Page ******************/
+
+
+/*This also adjusts the columns of the Home page and Projects page*/
+
+@media screen and (max-width: 600px) {
+    .col-sm-4,
+    .col-sm-3 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
