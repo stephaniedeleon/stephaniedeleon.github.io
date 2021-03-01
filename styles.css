@@ -294,6 +294,9 @@ footer div {
     .col-xl-4.personal {
         margin-bottom: 25px;
     }
+    .col-xl-4.personal img {
+        width: 300px;
+    }
     .col-xl-8 h3 {
         text-align: center;
     }
