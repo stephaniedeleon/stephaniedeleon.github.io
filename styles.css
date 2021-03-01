@@ -283,7 +283,7 @@ footer div {
 .col-xl-4.personal img {
     border-top-left-radius: 70px;
     border-bottom-right-radius: 70px;
-    width: 350px;
+    width: 370px;
 }
 
 .col-xl-4 {
@@ -294,11 +294,14 @@ footer div {
     .col-xl-4.personal {
         margin-bottom: 25px;
     }
-    .col-xl-4.personal img {
-        width: 300px;
-    }
     .col-xl-8 h3 {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .col-xl-4.personal img {
+        width: 270px;
     }
 }
 
