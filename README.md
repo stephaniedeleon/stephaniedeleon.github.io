@@ -6,7 +6,7 @@ My goal to guide people into a more fulfilling life, to inspire women in technol
 
 ## https://lovepanini.com/
 
-###Pages
+### Pages:
 - Home (Main Page)
 - About
 - Blog
