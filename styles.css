@@ -20,7 +20,11 @@ header {
 }
 
 
-/* Nav Bar */
+/***************** Nav Bar ******************/
+
+nav {
+    text-align: center;
+}
 
 .nav-links li {
     display: inline-block;
@@ -84,7 +88,7 @@ header {
 
 /*To activate the toggle menu nav bar*/
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 990px) {
     .nav-links li {
         opacity: 0;
     }
@@ -121,7 +125,7 @@ header {
 }
 
 
-/* Contact & Footer Section */
+/***************** Contact & Footer Section ******************/
 
 footer {
     background: #EAEBFF;
@@ -148,7 +152,7 @@ footer div {
 /***************** Main page ******************/
 
 
-/*Carousel*/
+/* Carousel */
 
 .carousel-inner img {
     width: 100%;
@@ -156,40 +160,20 @@ footer div {
     margin: auto;
 }
 
-.carousel-caption h4 {
-    color: navy;
-}
-
-.carousel-caption li {
-    text-align: center;
-    font-size: small;
-    color: navy;
-    text-transform: uppercase;
-    list-style: none;
-}
-
-.carousel-caption li i {
-    font-size: large;
-}
-
-.carousel-caption a:hover {
-    color: #1f78fe;
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .carousel-caption {
         opacity: 0;
     }
 }
 
 
-/* Buttons */
+/* Buttons throughout the whole website that suggests "more"*/
 
 .btn.learn-more {
     border-width: 0.5px;
     border-color: #BDB5FF;
     background-color: white;
-    padding: 6px 20px;
+    padding: 4px 20px;
     font-size: 13px;
     cursor: pointer;
     border-radius: 20px;
@@ -229,12 +213,16 @@ footer div {
     .col-md-8 {
         text-align: center;
     }
+    .col-md-4.bitmoji img {
+        height: 150px;
+    }
 }
 
 
 /* Projects in Main page */
 
 .logo-small {
+    /*Affects icons through out the whole website*/
     color: #a69cfe;
     font-size: 50px;
 }
@@ -280,28 +268,46 @@ footer div {
 
 /***************** About Page ******************/
 
-.col-xl-4.personal img {
+.main-section {
+    /*This also affects the Blog page and Projects page*/
+    width: auto;
+}
+
+.main-section img {
+    /*This also affects the Blog page and Projects page*/
+    max-width: 100%;
+    height: auto;
+}
+
+.col-md-4.personal img {
     border-top-left-radius: 70px;
     border-bottom-right-radius: 70px;
     width: 370px;
 }
 
-.col-xl-4 {
+.col-md-4 {
     text-align: center;
 }
 
+.col-md-8.about-details {
+    padding: 10px;
+}
+
 @media screen and (max-width: 1200px) {
-    .col-xl-4.personal {
-        margin-bottom: 25px;
-    }
-    .col-xl-8 h3 {
-        text-align: center;
+    .col-md-4.personal img {
+        width: 300px;
     }
 }
 
-@media screen and (max-width: 700px) {
-    .col-xl-4.personal img {
+@media screen and (max-width: 1000px) {
+    .col-md-4.personal img {
         width: 270px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .col-md-4.personal {
+        margin-bottom: 25px;
     }
 }
 
@@ -326,13 +332,18 @@ footer div {
 
 /***************** Blog Page ******************/
 
-
-/*This also adjusts the columns of the Home page and Projects page*/
+.row.blog-overview {
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 600px) {
+    /*This also adjusts the columns of the Home page and Projects page*/
     .col-sm-4,
     .col-sm-3 {
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+    .row.blog-overview {
+        margin-bottom: 0px;
     }
 }
