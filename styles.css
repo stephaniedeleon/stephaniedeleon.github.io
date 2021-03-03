@@ -206,6 +206,12 @@ footer div {
     text-align: center;
 }
 
+@media screen and (max-width: 880px) {
+    .col-md-4.bitmoji img {
+        height: 170px;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .col-md-4 {
         margin-bottom: 25px;
@@ -279,36 +285,46 @@ footer div {
     height: auto;
 }
 
-.col-md-4.personal img {
-    border-top-left-radius: 70px;
-    border-bottom-right-radius: 70px;
+.col-lg-4.personal img {
     width: 370px;
+    border-radius: 10px;
 }
 
-.col-md-4 {
+.col-lg-4 {
     text-align: center;
 }
 
-.col-md-8.about-details {
-    padding: 10px;
+.col-lg-8.about-details {
+    text-align: justify;
 }
 
-@media screen and (max-width: 1200px) {
-    .col-md-4.personal img {
-        width: 300px;
+@media screen and (max-width: 1250px) {
+    .col-lg-4.personal img {
+        width: 330px;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .col-md-4.personal img {
+@media screen and (max-width: 1050px) {
+    .col-lg-4.personal img {
         width: 270px;
     }
 }
 
-@media screen and (max-width: 780px) {
-    .col-md-4.personal {
-        margin-bottom: 25px;
+@media screen and (max-width: 990px) {
+    .col-lg-8.about-details {
+        margin-right: 60px;
+        margin-left: 60px;
     }
+    .col-lg-4.personal.top img {
+        margin-bottom: 30px;
+    }
+    .col-lg-4.personal.bottom img {
+        margin-top: 30px;
+    }
+}
+
+.closing {
+    width: 110px;
 }
 
 
