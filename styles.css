@@ -27,6 +27,7 @@ header {
 
 nav {
     text-align: center;
+    background-color: #EAEBFF;
 }
 
 .nav-links li {
@@ -92,9 +93,6 @@ nav {
 /*To activate the toggle menu nav bar*/
 
 @media screen and (max-width: 990px) {
-    .nav-links li {
-        opacity: 0;
-    }
     .toggle-menu {
         display: block;
         padding-right: 24px;
@@ -102,18 +100,7 @@ nav {
 }
 
 
-/*Nav bar toggle menu animation */
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateY(0px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(5px);
-    }
-}
+/* Nav bar toggle menu animation */
 
 .toggleExit .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
