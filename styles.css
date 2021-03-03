@@ -6,13 +6,16 @@ body {
     color: navy;
 }
 
-body h3,
-p {
+body p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body h4 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -320,6 +323,13 @@ footer div {
     }
     .col-lg-4.personal.bottom img {
         margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-lg-8.about-details {
+        margin-right: 20px;
+        margin-left: 20px;
     }
 }
 
