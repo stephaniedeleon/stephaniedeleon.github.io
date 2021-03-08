@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <!--  Stylesheets -->
     <link rel="stylesheet " href="../styles.css " type="text/css ">
-    <link rel="stylesheet " href="https://fonts.googleapis.com/css?family=Varela|Petit Formal Script|Alice">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Courier+Prime&family=Handlee&family=Varela&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -29,7 +30,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #EAEBFF;">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="../index.html">
             <img id="logo" src="../images/logo.png" width="200" class="d-inline-block align-top">
         </a>
@@ -52,45 +53,60 @@
     <header>
         <div class="main-section">
             <picture>
-                <source media="(max-width: 779px)" srcset="../images/about-main-sm.jpg">
-                <source media="(min-width: 780px)" srcset="../images/about-main.jpg">
+                <source media="(max-width: 859px)" srcset="../images/about-main-sm.jpg">
+                <source media="(min-width: 860px)" srcset="../images/about-main.jpg">
                 <img src="../images/about-main.jpg" alt="about me main image">
             </picture>
         </div>
     </header>
 
     <!-- About Section -->
-    <div class="container-fluid" style="padding: 40px;">
+    <div class="container" style="padding: 40px 10px;">
         <div class="row align-items-center">
-            <div class="col-lg-4 personal top">
+            <div class="col-md personal top">
                 <img src="../images/personal.jpg " alt="A smiling image of Stephanie holding a 2021 cake">
+                <figcaption>Circa 2021, California, USA</figcaption>
             </div>
-            <div class="col-lg-8 about-details">
+            <div class="col-md about-details">
                 <h3><i class="bi bi-chevron-right"></i>The Story_</h3><br>
-                <p>I’m Stephanie, a second-year Computer Science major & an aspiring VIP (Very Inspiring Person); and Panini is my family nickname and is very dear to me.</p>
-                <p>When people write letters they usually end their letters with a closing and a signature, and I wanted to do the same thing. But instead of letters it would be this website! As I would in a heartfelt letter, I will be creating content and
-                    developing projects with love, care, and passion.</p>
-                <p>Hence the name - Love, Panini <i class="bi bi-flower2"></i></p>
+                <p>Hello, world! I’m Stephanie, a second-year Computer Science major and an aspiring VIP (Very Inspiring Person).</p>
+                <p>My focus is simple: live a vibrant and fulfilling life while being an inspiration to others!</p>
+                <p>With my passion for Software Engineering, I developed Love, Panini from the ground up as a medium to share my passions, stories, and lessons with those willing to read or listen.</p>
+                <p>With my words, I hope to encourage and guide people to a better lifestyle. With my recipes, I hope to make people happy and satisfied. With my tech projects, I hope to spark interest in CS and promote diversity in tech. I may not be the
+                    best writer or developer, but hopefully, my sincerity seeps through.</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="padding: 40px; background-color: rgb(203, 254, 254);">
+    <div style="background-color: rgb(203, 254, 254);">
+        <div class="container" style="padding: 40px 10px;">
+            <div class="row align-items-center">
+                <div class=" col about-details center ">
+                    <h3><i class="bi bi-chevron-right "></i>Why Love, Panini?_</h3><br>
+                    <p>The nickname “Panini” originated from my Kuya (an older cousin), and it has been around for as long as I can remember. The name sits very close to my heart because (1) it’s uniquely cute, (2) for me, it’s very endearing, and (3) I
+                        get to be an Italian food!</p>
+                    <p>When people write letters, they usually end their letters with a closing and a signature, and I wanted to do something similar. But instead of letters, it would be this website! As I would in a heartfelt letter, I will create content
+                        and develop projects with love and care!</p>
+                    <p>Hence the name - Love, Panini.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding: 40px 10px;">
         <div class="row align-items-center">
-            <div class=" col-lg-8 about-details ">
-                <h3 style="font-family: 'Courier New', Courier, monospace; "><i class="bi bi-chevron-right "></i>Love, Panini_</h3><br>
-                <p>I’ve always aspired to inspire people and share my passions to those who are willing to listen, and I wanted to achieve this with my fondness for Software Engineering.</p>
-                <p>So, I decided to take on Web Development and code a website from the ground up where I can comfortably share my stories and experiences to the world.</p>
-                <p>With my words, I hope to inspire and guide people into a more fulfilling life. With my recipes, I hope to make people happy and satisfied. With my tech projects, I hope to inspire underrepresented groups to not be afraid to pursue a career
-                    in Engineering. I may not be the best writer but hopefully, my sincerity seeps through.</p>
-                <p>At the end of each blog, there are small code snippets - have a look! They are meant to be understood by everyone! </p>
-                <p>Thanks for taking the time to read and I hope you enjoy my website! <i class="bi bi-stars"></i></p>
+            <div class=" col-md about-details ">
+                <h3><i class="bi bi-chevron-right "></i>What will I find in Love, Panini?_</h3><br>
+                <p>Plenty of stuff! Ranging from wellness advice to life lessons. From tech projects to recipes and more! And most importantly, you would be able to embark on this journey with me as I learn more about life!</p>
+                <p>At the end of each blog, there are small code snippets - have a look! They are meant to be understood by everyone!</p>
+                <p>Thanks for taking the time to read my story, and I hope you enjoy my website! <i class="bi bi-stars"></i></p>
                 <img class="closing" src="../images/closing.png" alt="Love, Panini">
             </div>
-            <div class="col-lg-4 personal bottom">
+            <div class="col-md personal bottom">
                 <img src="../images/personal2.jpg " alt="A sitting image of Stephanie in front of the Louvre ">
+                <figcaption>Circa 2019, Paris, France</figcaption>
             </div>
         </div>
     </div>
+
 
 
     <!-- Contact & Footer Section -->
