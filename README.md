@@ -1,17 +1,12 @@
 # Love, Panini
 A personal website that serves both as a blog and as a project portfolio
 
-My goal to guide people into a more fulfilling life, to inspire women in technology, and to share my passions to the world.
-
+I created Love, Panini with the goal to inspire people, to promote diversity in technology, and to share my passions to the world.
 
 ## https://lovepanini.com/
 
 ### Pages:
 - Home (Main Page)
 - About
-- Blog
-  - Wellness
-  - Food
-  - Tech
-  - Books   
+- Blog   
 - Projects
