@@ -1,10 +1,11 @@
 /***************** General ******************/
 
 body {
-    background-color: rgb(217, 255, 255);
+    background-color: lightcyan;
+    /*background-color: rgb(217, 255, 255);*/
     margin: 0;
     color: navy;
-    font-family: "Varela", serif;
+    overflow: hidden;
 }
 
 body h3 {
@@ -16,17 +17,13 @@ body h4 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 1.10rem;
+    font-weight: 300;
+    font-family: 'Hind Vadodara', sans-serif;
 }
 
 header {
     text-align: center;
-}
-
-*,
- ::after,
- ::before {
-    box-sizing: border-box;
 }
 
 
@@ -35,6 +32,7 @@ header {
 nav {
     text-align: center;
     background-color: #EAEBFF;
+    font-family: "Varela", serif;
 }
 
 .nav-links li {
@@ -176,6 +174,7 @@ footer div {
     border-radius: 20px;
     text-transform: uppercase;
     color: navy;
+    font-family: "Varela", serif;
 }
 
 .btn.learn-more:hover {
@@ -202,6 +201,21 @@ footer div {
     text-align: center;
 }
 
+.col-md-8 p,
+.col-md-8 h3,
+.overview-main h3,
+.overview-main h4 {
+    text-align: left;
+}
+
+.col-md-8 {
+    text-align: center;
+}
+
+.row h4 {
+    text-align: center;
+}
+
 @media screen and (max-width: 950px) {
     .col-md-4.bitmoji img {
         height: 170px;
@@ -211,9 +225,6 @@ footer div {
 @media screen and (max-width: 770px) {
     .col-md-4 {
         margin-bottom: 25px;
-    }
-    .col-md-8 {
-        text-align: center;
     }
     .col-md-4.bitmoji img {
         height: 150px;
@@ -236,7 +247,7 @@ footer div {
 
 /* Blog Section in Main Page */
 
-.blog-overview-main img {
+.overview-main img {
     border-radius: 6px;
 }
 
@@ -283,6 +294,15 @@ footer div {
     /*This also affects the Blog page and Projects page*/
     max-width: 100%;
     height: auto;
+}
+
+.about-details p {
+    font-size: 1.10rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .personal img {
@@ -342,7 +362,7 @@ footer div {
         width: 270px;
     }
     .about-details {
-        padding: 0 60px;
+        padding: 0 40px;
     }
 }
 
@@ -354,7 +374,7 @@ footer div {
 }
 
 
-/* captions for pictures - general */
+/* Captions for pictures - general */
 
 figcaption {
     text-align: center;
