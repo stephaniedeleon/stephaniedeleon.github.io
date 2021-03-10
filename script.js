@@ -10,3 +10,7 @@ const navSlide = () => {
 
 //Function Calls:
 navSlide();
+
+$(document).ready(function() {
+    jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 1200 // 1 sec
+});

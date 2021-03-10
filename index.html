@@ -49,9 +49,9 @@
     </nav>
 
     <!-- Carousel Section -->
-    <!-- Images have links, purpose is mostly for mobile 
+    <!-- Images have links, purpose is mostly for mobile -->
     <header>
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="15000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -60,56 +60,52 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <picture>
+                        <source media="(max-width: 819px)" srcset="images/welcome-sm-main.jpg">
+                        <source media="(min-width: 820px)" srcset="images/welcome-main.jpg">
+                        <img class="d-block h-auto" src="images/welcome-main.jpg " alt="Welcome to Love, Panini">
+                    </picture>
                     <a href="index.html">
-                        <picture>
-                            <source media="(max-width: 819px)" srcset="images/welcome-sm-main.jpg">
-                            <source media="(min-width: 820px)" srcset="images/welcome-main.jpg">
-                            <img class="d-block h-auto" src="images/welcome-main.jpg " alt="First slide">
-                        </picture>
+                        <div class="carousel-caption">
+                            <img src="images/main.png" alt="Welcome, friends! I'm very happy you are here!">
+                        </div>
                     </a>
-                    <div class="carousel-caption">
-                        <h4>Love, Panini</h4>
-                        <p>Welcome friends! We are very happy you are here!</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width: 819px)" srcset="images/mission-sm-main.jpg">
+                        <source media="(min-width: 820px)" srcset="images/mission-main.jpg">
+                        <img class="d-block h-auto" src="images/mission-main.jpg" alt="Mission">
+                    </picture>
                     <a href="pages/about.html">
-                        <picture>
-                            <source media="(max-width: 819px)" srcset="images/mission-sm-main.jpg">
-                            <source media="(min-width: 820px)" srcset="images/mission-main.jpg">
-                            <img class="d-block h-auto" src="images/mission-main.jpg" alt="Second slide">
-                        </picture>
+                        <div class="carousel-caption">
+                            <img src="images/mission.png" alt="Learn more about my mission to encourage others to be V.I.P.s: very inspiring people!">
+                        </div>
                     </a>
-                    <div class="carousel-caption">
-                        <h4>Mission</h4>
-                        <p>Learn more about my mission to encourage others to be VIPs: Very Inspiring People!</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width: 819px)" srcset="images/blog-sm-main.jpg">
+                        <source media="(min-width: 820px)" srcset="images/blog-main.jpg">
+                        <img class="d-block h-auto" src="images/blog-main.jpg" alt="The Blog">
+                    </picture>
                     <a href="pages/blog.html">
-                        <picture>
-                            <source media="(max-width: 819px)" srcset="images/blog-sm-main.jpg">
-                            <source media="(min-width: 820px)" srcset="images/blog-main.jpg">
-                            <img class="d-block h-auto" src="images/blog-main.jpg" alt="Third slide">
-                        </picture>
+                        <div class="carousel-caption">
+                            <img src="images/blog.png" alt="Discover articles on life-lessons, wellness, recipes, travel, & more!">
+                        </div>
                     </a>
-                    <div class="carousel-caption">
-                        <img class="d-block h-auto" src="images/blog.png" style="width:100px">
-                        <p>Discover articles on life-lessons, wellness, recipes, and more!</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width: 819px)" srcset="images/projects-sm-main.jpg">
+                        <source media="(min-width: 820px)" srcset="images/projects-main.jpg">
+                        <img class="d-block h-auto" src="images/projects-main.jpg" alt="Projects">
+                    </picture>
                     <a href="pages/projects.html">
-                        <picture>
-                            <source media="(max-width: 819px)" srcset="images/projects-sm-main.jpg">
-                            <source media="(min-width: 820px)" srcset="images/projects-main.jpg">
-                            <img class="d-block h-auto" src="images/projects-main.jpg" alt="Fourth slide">
-                        </picture>
+                        <div class="carousel-caption">
+                            <img src="images/projects.png" alt="Take a look at my personal computer science projects.">
+                        </div>
                     </a>
-                    <div class="carousel-caption">
-                        <h4>Projects</h4>
-                        <p>Take a look at my personal Computer Science Projects!</p>
-                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -121,94 +117,39 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </header> -->
+    </header>
 
-    <!-- About Section 
-    <div class="container-fluid" style="padding: 40px;">
-        <div class="row align-items-center">
-            <div class="col-md-4 bitmoji">
-                <img src="images/bitmoji-main.png " alt="Hello bitmoji ">
-            </div>
-            <div class="col-md-8">
-                <h3>This is Love, Panini_</h3><br>
-                <p>My mission is to live a vibrant and fulfilling life while being an inspiration to others and encourage people to do the same!</p>
-                <p>I make blogs, share recipes, and post projects to promote diversity in tech and make everyone more inspired and supported in living a life full of zest, love, and purpose.</p><br>
-                <button class="btn learn-more ">
-                    <a href="pages/about.html ">Learn more</a> <i class="bi bi-heart " role="img" aria-label="heart"></i>
-                </button>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Project Section 
-    <div class="container-fluid text-center overview-main" style="background-color: rgb(203, 254, 254); padding: 30px; ">
-        <h3>Projects_</h3>
-        <h4>Featured Tech Projects</h4>
-        <br>
-        <div class="row">
-            <div class="col-sm-4 ">
-                <i class="bi bi-display-fill logo-small " role="img" aria-label="Display Icon"></i>
-                <h4>Love, Panini</h4>
-                <p>This amazing website!</p>
-            </div>
-            <div class="col-sm-4 ">
-                <i class="bi bi-phone-fill logo-small " role="img" aria-label="Phone Icon"></i>
-                <h4>MoodyBuds</h4>
-                <p>A project for YHack2020.</p>
-            </div>
-            <div class="col-sm-4 ">
-                <i class="bi bi-twitter logo-small " role="img" aria-label="Twitter Icon"></i>
-                <h4>TwitterApp</h4>
-                <p>A project for CodePath.</p>
-            </div>
-        </div>
-        <br>
-        <button class="btn learn-more ">
-            <a href="pages/projects.html ">More like this</a> <i class="bi bi-plus-circle " role="img" aria-label="Arrow right"></i> 
-        </button>
-    </div> -->
-
-    <!-- Blog Section 
-    <div class="container-fluid text-center overview-main" style="padding: 30px; ">
-        <h3>The Blog_</h3>
-        <h4>Featured</h4>
-        <br>
-        <div class="w3-row-padding ">
-            <div class="w3-col l3 m6 w3-margin-bottom " id="blog-container ">
-                <div class="w3-display-container ">
-                    <button class="btn-blog "><a href="pages/blog.html ">Wellness</a></button>
-                    <img src="images/wellness.jpg " alt="Wellness Image" style="width:100% ">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom " id="blog-container ">
-                <div class="w3-display-container ">
-                    <button class="btn-blog "><a href="pages/blog.html ">Food</a></button>
-                    <img src="images/food.jpg " alt="Food Image" style="width:100% ">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom " id="blog-container ">
-                <div class="w3-display-container ">
-                    <button class="btn-blog "><a href="pages/blog.html ">Tech</a></button>
-                    <img src="images/tech.jpg " alt="Tech Image" style="width:100% ">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom " id="blog-container ">
-                <div class="w3-display-container ">
-                    <button class="btn-blog "><a href="pages/blog.html ">Books</a></button>
-                    <img src="images/book.jpg " alt="Books Image" style="width:100% ">
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Contact & Footer Section -->
 
     <footer class="container-fluid">
-        <h3 class="text-center">Contact Me_</h3>
-        <h4><a href="https://www.linkedin.com/in/stephanie-de-leon-a902b717a/ " target="_blank " rel="noopener noreferrer "><i class="bi bi- bi-linkedin"></i></a>
-            <a href="mailto:stephaniedeleon516@gmail.com " target="_blank " rel="noopener noreferrer "><i class="bi bi-envelope"></i></a>
-            <a href="https://github.com/stephaniedeleon " target="_blank " rel="noopener noreferrer "><i class="bi bi-github"></i></a></h4>
-        <div>Coded with love & care by Stephanie De Leon</div>
+        <div class="row align-items-center">
+            <div id="footer-col-l" class="col-md-4">
+                <h5>Let's get acquainted_</h5>
+                <div class="footer-socials">
+                    <h4>
+                        <a href="https://www.linkedin.com/in/stephanie-de-leon-a902b717a/ " target="_blank " rel="noopener noreferrer "><i class="bi bi- bi-linkedin"></i></a>
+                        <a href="mailto:stephaniedeleon516@gmail.com " target="_blank " rel="noopener noreferrer "><i class="bi bi-envelope"></i></a>
+                        <a href="https://github.com/stephaniedeleon " target="_blank " rel="noopener noreferrer "><i class="bi bi-github"></i></a>
+                    </h4>
+                </div>
+            </div>
+            <div id="footer-col-m" class="col-md-4">
+                <a href="index.html">
+                    <img src="images/favicon.ico" alt="Love, Panini small logo" style="max-height: 3.2rem;">
+                    <img class="signature" src="images/closing.png" alt="Love, Panini signature" style="max-height: 4.5rem;">
+                </a>
+            </div>
+            <div id="footer-col-r" class="col-md-4">
+                <h5>Looking for more?_</h5>
+                <div class="footer-links">
+                    <a href="pages/about.html">About</a>
+                    <a href="pages/blog.html">The Blog</a>
+                    <a href="pages/projects.html">Projects</a>
+                </div>
+            </div>
+        </div>
+        <div class="credits">Coded with love &amp; care by Stephanie De Leon</div>
     </footer>
 
 </body>
