@@ -11,13 +11,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Boostrap CS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <!--  Stylesheets -->
     <link rel="stylesheet " href="styles.css " type="text/css ">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Handlee&family=Hind+Vadodara:wght@300&family=Varela&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Handlee&family=Hind+Vadodara:wght@300&family=Varela&display=swap"
+        rel="stylesheet">
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -33,7 +36,8 @@
         <a class="navbar-brand" href="index.html">
             <img id="logo" src="images/logo.png" width="200" class="d-inline-block align-top">
         </a>
-        <div class="toggle-menu" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="toggle-menu" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+            aria-expanded="false" aria-label="Toggle navigation">
             <div class=line1></div>
             <div class=line2></div>
             <div class=line3></div>
@@ -49,9 +53,9 @@
     </nav>
 
     <!-- Carousel Section -->
-    <!-- Images have links, purpose is mostly for mobile -->
     <header>
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="15000">
+        <div id="carouselIndicators" style="max-width: 1600px" class="carousel slide" data-ride="carousel"
+            data-interval="15000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -61,49 +65,51 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <picture>
-                        <source media="(max-width: 819px)" srcset="images/welcome-sm-main.jpg">
-                        <source media="(min-width: 820px)" srcset="images/welcome-main.jpg">
-                        <img class="d-block h-auto" src="images/welcome-main.jpg " alt="Welcome to Love, Panini">
+                        <source media="(max-width: 819px)" srcset="images/carousel/welcome-sm-main.jpg">
+                        <source media="(min-width: 820px)" srcset="images/carousel/welcome-main.jpg">
+                        <img class="d-block h-auto" src="images/carousel/welcome-main.jpg " alt="Welcome to Love, Panini">
                     </picture>
                     <a href="index.html">
                         <div class="carousel-caption">
-                            <img src="images/main.png" alt="Welcome, friends! I'm very happy you are here!">
+                            <img src="images/carousel/main.png" alt="Welcome, friends! I'm very happy you are here!">
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item">
                     <picture>
-                        <source media="(max-width: 819px)" srcset="images/mission-sm-main.jpg">
-                        <source media="(min-width: 820px)" srcset="images/mission-main.jpg">
-                        <img class="d-block h-auto" src="images/mission-main.jpg" alt="Mission">
+                        <source media="(max-width: 819px)" srcset="images/carousel/mission-sm-main.jpg">
+                        <source media="(min-width: 820px)" srcset="images/carousel/mission-main.jpg">
+                        <img class="d-block h-auto" src="images/carousel/mission-main.jpg" alt="Mission">
                     </picture>
                     <a href="pages/about.html">
                         <div class="carousel-caption">
-                            <img src="images/mission.png" alt="Learn more about my mission to encourage others to be V.I.P.s: very inspiring people!">
+                            <img src="images/carousel/mission.png"
+                                alt="Learn more about my mission to encourage others to be V.I.P.s: very inspiring people!">
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item">
                     <picture>
-                        <source media="(max-width: 819px)" srcset="images/blog-sm-main.jpg">
-                        <source media="(min-width: 820px)" srcset="images/blog-main.jpg">
-                        <img class="d-block h-auto" src="images/blog-main.jpg" alt="The Blog">
+                        <source media="(max-width: 819px)" srcset="images/carousel/blog-sm-main.jpg">
+                        <source media="(min-width: 820px)" srcset="images/carousel/blog-main.jpg">
+                        <img class="d-block h-auto" src="images/carousel/blog-main.jpg" alt="The Blog">
                     </picture>
                     <a href="pages/blog.html">
                         <div class="carousel-caption">
-                            <img src="images/blog.png" alt="Discover articles on life-lessons, wellness, recipes, travel, & more!">
+                            <img src="images/carousel/blog.png"
+                                alt="Discover articles on life-lessons, wellness, recipes, travel, & more!">
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item">
                     <picture>
-                        <source media="(max-width: 819px)" srcset="images/projects-sm-main.jpg">
-                        <source media="(min-width: 820px)" srcset="images/projects-main.jpg">
-                        <img class="d-block h-auto" src="images/projects-main.jpg" alt="Projects">
+                        <source media="(max-width: 819px)" srcset="images/carousel/projects-sm-main.jpg">
+                        <source media="(min-width: 820px)" srcset="images/carousel/projects-main.jpg">
+                        <img class="d-block h-auto" src="images/carousel/projects-main.jpg" alt="Projects">
                     </picture>
                     <a href="pages/projects.html">
                         <div class="carousel-caption">
-                            <img src="images/projects.png" alt="Take a look at my personal computer science projects.">
+                            <img src="images/carousel/projects.png" alt="Take a look at my personal computer science projects.">
                         </div>
                     </a>
                 </div>
@@ -128,16 +134,20 @@
                 <h5>Let's get acquainted_</h5>
                 <div class="footer-socials">
                     <h4>
-                        <a href="https://www.linkedin.com/in/stephanie-de-leon-a902b717a/ " target="_blank " rel="noopener noreferrer "><i class="bi bi- bi-linkedin"></i></a>
-                        <a href="mailto:stephaniedeleon516@gmail.com " target="_blank " rel="noopener noreferrer "><i class="bi bi-envelope"></i></a>
-                        <a href="https://github.com/stephaniedeleon " target="_blank " rel="noopener noreferrer "><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/stephanie-de-leon-a902b717a/ " target="_blank "
+                            rel="noopener noreferrer "><i class="bi bi- bi-linkedin"></i></a>
+                        <a href="mailto:withlovepanini@gmail.com " target="_blank " rel="noopener noreferrer "><i
+                                class="bi bi-envelope"></i></a>
+                        <a href="https://github.com/stephaniedeleon " target="_blank " rel="noopener noreferrer "><i
+                                class="bi bi-github"></i></a>
                     </h4>
                 </div>
             </div>
             <div id="footer-col-m" class="col-md-4">
                 <a href="index.html">
                     <img src="images/favicon.ico" alt="Love, Panini small logo" style="max-height: 3.2rem;">
-                    <img class="signature" src="images/closing.png" alt="Love, Panini signature" style="max-height: 4.5rem;">
+                    <img class="signature" src="images/closing.png" alt="Love, Panini signature"
+                        style="max-height: 4.3rem;">
                 </a>
             </div>
             <div id="footer-col-r" class="col-md-4">
@@ -155,7 +165,11 @@
 </body>
 
 <script src="script.js "></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+    crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js "
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns "
+    crossorigin="anonymous "></script>
 
 </html>
