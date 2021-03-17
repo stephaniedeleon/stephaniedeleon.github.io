@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Handlee&family=Hind+Vadodara:wght@300&family=Varela&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hind+Vadodara:wght@300&family=Playfair+Display&family=Varela&display=swap"
         rel="stylesheet">
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,10 +44,14 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto nav-links">
-                <li class="nav-item"><a class="active" href="index.html ">Home</a></li>
-                <li class="nav-item"><a href="pages/about.html ">About</a></li>
-                <li class="nav-item"><a href="pages/blog.html ">Blog</a></li>
-                <li class="nav-item"><a href="pages/projects.html ">Projects</a></li>
+                <li class="nav-item" role="navigation" aria-label="Go back to main page"><a class="active"
+                        href="index.html ">Home</a></li>
+                <li class="nav-item" role="navigation" aria-label="Go to about page"><a
+                        href="pages/about.html ">About</a></li>
+                <li class="nav-item" role="navigation" aria-label="Go to blog page for articles"><a
+                        href="pages/blog.html ">Blog</a></li>
+                <li class="nav-item" role="navigation" aria-label="Go to projects page"><a
+                        href="pages/projects.html ">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -55,7 +59,7 @@
     <!-- Carousel Section -->
     <header>
         <div id="carouselIndicators" style="max-width: 1600px" class="carousel slide" data-ride="carousel"
-            data-interval="15000">
+            data-interval="25000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -67,7 +71,8 @@
                     <picture>
                         <source media="(max-width: 819px)" srcset="images/carousel/welcome-sm-main.jpg">
                         <source media="(min-width: 820px)" srcset="images/carousel/welcome-main.jpg">
-                        <img class="d-block h-auto" src="images/carousel/welcome-main.jpg " alt="Welcome to Love, Panini">
+                        <img class="d-block h-auto" src="images/carousel/welcome-main.jpg "
+                            alt="Welcome to Love, Panini">
                     </picture>
                     <a href="index.html">
                         <div class="carousel-caption">
@@ -109,7 +114,8 @@
                     </picture>
                     <a href="pages/projects.html">
                         <div class="carousel-caption">
-                            <img src="images/carousel/projects.png" alt="Take a look at my personal computer science projects.">
+                            <img src="images/carousel/projects.png"
+                                alt="Take a look at my personal computer science projects.">
                         </div>
                     </a>
                 </div>
@@ -125,6 +131,313 @@
         </div>
     </header>
 
+    <!-- Blog Section -->
+    <section class="container-fluid" style="max-width: 1600px">
+        <div class="latest-sect">
+            <a href="pages/blog.html">
+                <h2>Featured articles...</h2>
+            </a>
+            <div class="not-mobile" id="main-articles">
+                <div class="row row-latest">
+                    <div class="col col-main">
+                        <a href="pages/articles/">
+                            <div class="img-container">
+                                <img class="card-img" src="images/blog/spark-blog.jpg"
+                                    alt="A sparkler overlooking city lights">
+                            </div>
+                            <h3 class="latest-title" style="padding-top: 0.8rem;">Be a Spark</h3>
+                            <h4 class="subtitle">Be an inspiration to others. Be&nbsp;a&nbsp;VIP!</h3>
+                        </a>
+                    </div>
+                    <div class="col col-main">
+                        <a href="pages/articles/">
+                            <div class="img-container">
+                                <img class="card-img" src="images/blog/cookies-blog.jpg"
+                                    alt="Chocolate chip walnut cookies on a rack">
+                            </div>
+                            <h3 class="latest-title" style="padding-top: 0.8rem;">Chocolate&nbsp;Chip
+                                Walnut&nbsp;Cookies
+                            </h3>
+                            <h4 class="subtitle">My version of the famous Levain&nbsp;Cookies.</h3>
+                        </a>
+                    </div>
+                    <div class="col col-main">
+                        <a href="pages/articles/">
+                            <div class="img-container">
+                                <img class="card-img" src="images/blog/confidence-blog.jpg"
+                                    alt="Stephanie looking at the view of Athens, Greece on a rock's ledge.">
+                            </div>
+                            <h3 class="latest-title" style="padding-top: 0.8rem;">Self-Confidence</h3>
+                            <h4 class="subtitle">A guide to grow your self&nbsp;confidence!</h3>
+                        </a>
+                    </div>
+                </div>
+                <div id="more-btn">
+                    <a class="btn" href="pages/blog.html" role="button" aria-label="Look at more blog articles">More
+                        &nbsp;<i class="bi bi-plus-circle"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Carousel for mobile -->
+            <div class="mobile">
+                <div id="carouselIndicatorsBlog" style="max-width: 1600px;" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators mobile-indicators" style="bottom: -70px;">
+                        <li data-target="#carouselIndicatorsBlog" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicatorsBlog" data-slide-to="1"></li>
+                        <li data-target="#carouselIndicatorsBlog" data-slide-to="2"></li>
+                        <a class="carousel-control-prev" href="#carouselIndicatorsBlog" role="button" data-slide="prev">
+                            <i class="bi bi-chevron-left fal-lg text-muted"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselIndicatorsBlog" role="button" data-slide="next">
+                            <i class="bi bi-chevron-right fal-lg text-muted"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="pages/articles/">
+                                <div class="img-container">
+                                    <img class="card-img" src="images/blog/spark-blog.jpg"
+                                        alt="A sparkler overlooking city lights">
+                                </div>
+                                <h3 class="latest-title" style="padding-top: 0.8rem;">Be a Spark</h3>
+                                <h4 class="subtitle">Be an inspiration to others. Be&nbsp;a&nbsp;VIP!</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pages/articles/">
+                                <div class="img-container">
+                                    <img class="card-img" src="images/blog/cookies-blog.jpg"
+                                        alt="Chocolate chip walnut cookies on a rack">
+                                </div>
+                                <h3 class="latest-title" style="padding-top: 0.8rem;">Chocolate&nbsp;Chip
+                                    Walnut&nbsp;Cookies
+                                </h3>
+                                <h4 class="subtitle">My version of the famous Levain&nbsp;Cookies.</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pages/articles/">
+                                <div class="img-container">
+                                    <img class="card-img" src="images/blog/confidence-blog.jpg"
+                                        alt="Stephanie looking at the view of Athens, Greece on a rock's ledge.">
+                                </div>
+                                <h3 class="latest-title" style="padding-top: 0.8rem;">Self-Confidence</h3>
+                                <h4 class="subtitle">A guide to grow your self&nbsp;confidence!</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container-fluid" style="background-color: #E4FEFF;">
+        <div class="main-sect">
+            <h2>Welcome Everyone!</h2>
+            <div class="row">
+                <div class="col-sm" style="display: flex; text-align: center; flex-direction: column;">
+                    <div id="intro-img-cont">
+                        <img class="about-main-sect-img" style="border-radius: 2.5px; width:340px; top:0;"
+                            src="images/main-abt-img.png" alt="Stephanie holding a cake with 2021 on top of it">
+                    </div>
+                </div>
+                <div class="col-sm" style="min-width: 22rem; padding-top: 1.8rem;">
+                    <div style="max-width: 30rem; margin: auto;">
+                        <div>
+                            <p id="intro">This is Love, Panini</p>
+                        </div>
+                        <div>
+                            <p style="padding-top: 1rem;">My&nbsp;mission&nbsp;is to live a vibrant and
+                                fulfilling&nbsp;life while being an&nbsp;inpsiration to&nbsp;others,
+                                and&nbsp;encourage&nbsp;people to do&nbsp;the&nbsp;same.</p>
+                            <p style="padding-top: 1rem; padding-bottom: 2rem;">
+                                I make blogs, share recipes, and&nbsp;post&nbsp;projects to make you
+                                everyone&nbsp;more&nbsp;inspired
+                                and supported in living a life full of zest,&nbsp;love, and&nbsp;purpose!
+                            </p>
+                            <div id="more-btn">
+                                <a class="btn" href="pages/about.html" role="button"
+                                    aria-label="Learn more about the mission of Love, Panini">Learn more &nbsp;<i
+                                        class="bi bi-moon-stars"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="container-fluid" style="max-width: 1600px">
+        <div class="latest-sect">
+            <a href="pages/projects.html">
+                <h2>Featured projects...</h2>
+            </a>
+            <div class="not-mobile" id="main-articles">
+                <div class="row row-latest">
+                    <div class="col col-main">
+                        <a href="pages/projects/">
+                            <div class="img-container">
+                                <img class="card-img" src="images/projects/lovepanini.png"
+                                    alt="The logo of Love, Panini">
+                            </div>
+                            <h3 class="latest-title" style="padding-top: 0.8rem;">Love, Panini</h3>
+                            <h4 class="subtitle">This website!</h3>
+                        </a>
+                    </div>
+                    <div class="col col-main">
+                        <a href="pages/projects/">
+                            <div class="img-container">
+                                <img class="card-img" src="images/projects/moodybuds.png" alt="The logo of MoodyBuds">
+                            </div>
+                            <h3 class="latest-title" style="padding-top: 0.8rem;">MoodyBuds</h3>
+                            <h4 class="subtitle">A project for YHack2020.</h3>
+                        </a>
+                    </div>
+                    <div class="col col-main">
+                        <a href="pages/projects/">
+                            <div class="img-container">
+                                <img class="card-img" src="images/projects/twitter.png" alt="The blue logo of Twitter">
+                            </div>
+                            <h3 class="latest-title" style="padding-top: 0.8rem;">Twitter App</h3>
+                            <h4 class="subtitle">A project for CodePath.</h3>
+                        </a>
+                    </div>
+                    <div class="col col-main">
+                        <a href="pages/projects/">
+                            <div class="img-container">
+                                <img class="card-img" src="images/projects/memorymaster.png"
+                                    alt="The Memory Master game with 9 blocks each sporting a different color.">
+                            </div>
+                            <h3 class="latest-title" style="padding-top: 0.8rem;">Memory Master</h3>
+                            <h4 class="subtitle">A Light & Sound Memory game.</h3>
+                        </a>
+                    </div>
+                </div>
+                <div id="more-btn">
+                    <a class="btn" href="pages/projects.html" role="button" aria-label="Look at more projects">More
+                        &nbsp;<i class="bi bi-plus-circle"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Carousel for mobile -->
+            <div class="mobile">
+                <div id="carouselIndicatorsProj" style="max-width: 1600px;" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators mobile-indicators" style="bottom: -70px;">
+                        <li data-target="#carouselIndicatorsProj" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicatorsProj" data-slide-to="1"></li>
+                        <li data-target="#carouselIndicatorsProj" data-slide-to="2"></li>
+                        <li data-target="#carouselIndicatorsProj" data-slide-to="3"></li>
+                        <a class="carousel-control-prev" href="#carouselIndicatorsProj" role="button" data-slide="prev">
+                            <i class="bi bi-chevron-left fal-lg text-muted"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselIndicatorsProj" role="button" data-slide="next">
+                            <i class="bi bi-chevron-right fal-lg text-muted"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="pages/projects/">
+                                <div class="img-container">
+                                    <img class="card-img" src="images/projects/lovepanini.png"
+                                        alt="The logo of Love, Panini">
+                                </div>
+                                <h3 class="latest-title" style="padding-top: 0.8rem;">Love, Panini</h3>
+                                <h4 class="subtitle">This website!</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pages/projects/">
+                                <div class="img-container">
+                                    <img class="card-img" src="images/projects/moodybuds.png" alt="The logo of MoodyBuds">
+                                </div>
+                                <h3 class="latest-title" style="padding-top: 0.8rem;">MoodyBuds</h3>
+                                <h4 class="subtitle">A project for YHack2020.</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pages/projects/">
+                                <div class="img-container">
+                                    <img class="card-img" src="images/projects/twitter.png" alt="The blue logo of Twitter">
+                                </div>
+                                <h3 class="latest-title" style="padding-top: 0.8rem;">Twitter App</h3>
+                                <h4 class="subtitle">A project for CodePath.</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pages/projects/">
+                                <div class="img-container">
+                                    <img class="card-img" src="images/projects/memorymaster.png"
+                                        alt="The Memory Master game with 9 blocks each sporting a different color.">
+                                </div>
+                                <h3 class="latest-title" style="padding-top: 0.8rem;">Memory Master</h3>
+                                <h4 class="subtitle">A Light & Sound Memory game.</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Join Section -->
+
+    <section class="container-fluid" style="background-color:  #E4FEFF;">
+        <div class="main-sect">
+            <h2>Join the Family!</h2>
+            <div class="row">
+                <div class="col-sm" style="display: flex; text-align: center; flex-direction: column;">
+                    <div id="intro-img-cont">
+                        <div>
+                            <img class="about-main-sect-img" style="border-radius: 2.5px; width:310px;"
+                                src="images/bitmoji-main.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm subs-form" style="min-width: 22rem;">
+                    <div style="max-width: 28rem; margin: auto;">
+                        <p id="intro">Stay in the loop!</p>
+                        <p style="padding-top: 0rem;">Sign up for the Newsletter to stay up-to-date with everything
+                            Love,&nbsp;Panini.</p>
+                        <!-- Form -->
+                        <form
+                            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf9iMaa0GmFwumRwAgXaKn_kuDjU60niaOdoqVqaBdOzwoUwA/formResponse">
+                            <div class="form-group">
+                                <input name="entry.1484827855" type="text" class="form-control" maxlength="23"
+                                    placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input name="entry.1196713065" type="email" class="form-control" maxlength="30"
+                                    aria-describedby="emailHelp" placeholder="Email Address" required="">
+                                <small id="emailHelp" class="form-text text-muted"> &nbsp;I'll never share your email
+                                    with anyone else.</small>
+                            </div>
+                            <div class="form-group form-check" style="text-align: center;">
+                                <input type="checkbox" class="form-check-input" id="agreement" required="">
+                                <label class="form-check-label" for="agreement">I agree to receive Love, Panini
+                                    updates</label>
+                            </div>
+                            <div id="subs-btn" style="text-align: center;">
+                                <button class="btn" type="submit" aria-label="Subscribe to the Love, Panini Newsletter">
+                                    Subscribe &nbsp;<i class="bi bi-envelope"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact & Footer Section -->
 
@@ -134,11 +447,14 @@
                 <h5>Let's get acquainted_</h5>
                 <div class="footer-socials">
                     <h4>
-                        <a href="https://www.linkedin.com/in/stephanie-de-leon-a902b717a/ " target="_blank "
+                        <a role="link" aria-label="Navigate to Stephanie's LinkedIn Page"
+                            href="https://www.linkedin.com/in/stephanie-de-leon-a902b717a/ " target="_blank "
                             rel="noopener noreferrer "><i class="bi bi- bi-linkedin"></i></a>
-                        <a href="mailto:withlovepanini@gmail.com " target="_blank " rel="noopener noreferrer "><i
+                        <a role="link" aria-label="Send an Email to Love, Panini"
+                            href="mailto:withlovepanini@gmail.com " target="_blank " rel="noopener noreferrer "><i
                                 class="bi bi-envelope"></i></a>
-                        <a href="https://github.com/stephaniedeleon " target="_blank " rel="noopener noreferrer "><i
+                        <a role="link" aria-label="Navigate to Stephanie's GitHub Page"
+                            href="https://github.com/stephaniedeleon " target="_blank " rel="noopener noreferrer "><i
                                 class="bi bi-github"></i></a>
                     </h4>
                 </div>
@@ -153,13 +469,13 @@
             <div id="footer-col-r" class="col-md-4">
                 <h5>Looking for more?_</h5>
                 <div class="footer-links">
-                    <a href="pages/about.html">About</a>
-                    <a href="pages/blog.html">The Blog</a>
-                    <a href="pages/projects.html">Projects</a>
+                    <a role="navigation" aria-label="Go to about page" href="pages/about.html">About</a>
+                    <a role="navigation" aria-label="Go to blog page for articles" href="pages/blog.html">The Blog</a>
+                    <a role="navigation" aria-label="Go to projects page" href="pages/projects.html">Projects</a>
                 </div>
             </div>
         </div>
-        <div class="credits">Coded with love &amp; care by Stephanie De Leon</div>
+        <div class="credits">Coded with love &amp; care by Stephanie&nbsp;De&nbsp;Leon</div>
     </footer>
 
 </body>
