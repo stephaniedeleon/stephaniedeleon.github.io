@@ -30,6 +30,16 @@ header {
     background-color:  #E4FEFF;
 }
 
+/* Hightlighting in website */
+::-moz-selection { 
+    background-color: rgb(217, 255, 255); 
+    color: #4c3cd3; 
+} 
+::selection { 
+    background-color: rgb(217, 255, 255); 
+    color: #4c3cd3; 
+}
+
 
 /***************** Nav Bar ******************/
 
@@ -269,15 +279,6 @@ footer a:hover {
 }
 
 
-/* For Carousel, ,akes the transition slower */
-
-.carousel-inner .carousel-item {
-    transition: -webkit-transform 1.2s ease;
-    transition: transform 1.2s ease;
-    transition: transform 1.2s ease, -webkit-transform 1.2 ease;
-}
-
-
 /* Blog & Projects Section in Main Page */
 
 .latest-sect{
@@ -292,7 +293,7 @@ footer a:hover {
     color: #1f78fe;
 }
 
-.row-latest{
+.row-latest {
     padding: 1rem 0;
 }
 
@@ -307,7 +308,7 @@ footer a:hover {
     border-radius: calc(.25rem - 1px);
 }
 
-.card-img:hover {
+.not-mobile .card-img:hover {
     border-radius: 18px;
     box-shadow:  0 0 10px rgba(3, 16, 114, 0.2), 0 0 15px rgba(4, 19, 138, 0.2);
 }
@@ -351,16 +352,43 @@ h4.subtitle {
 }
 
 
-@media screen and (min-width: 819px) {
+@media screen and (min-width: 649px) {
     .mobile {
         display: none;
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 650px) {
     .not-mobile {
         display: none;
     }
+}
+
+.mobile {
+    padding-top: 1rem;
+    padding-bottom: 3.6rem;
+}
+  
+.mobile .card-img:hover {
+    border-radius: 18px;
+}
+
+
+.mobile-indicators li {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color:#5094fa;
+}
+
+.bi-chevron-left::before {
+    color: #5094fa;
+    font-size: x-large;
+}
+
+.bi-chevron-right::before {
+    color: #5094fa;
+    font-size: x-large;
 }
 
 
@@ -373,10 +401,9 @@ h4.subtitle {
     margin: 0 auto;
     width:100%;
 }
-
 .main-sect img {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #intro {
@@ -385,8 +412,18 @@ h4.subtitle {
     font-size: 2rem;
 }
 
+@media screen and (max-width: 820px) {
+    .main-sect img {
+        margin-bottom: 0;
+    }
+}
+
 
 /* Join Section in Main page */
+
+.form-check-label {
+    font-family: 'Hind Vadodara', sans-serif;
+}
 
 .form-control {
     background-color: #E4FEFF;
@@ -433,20 +470,13 @@ h4.subtitle {
     border-radius: 12px;
 }
 
-
+@media screen and (max-width: 756px) {
+    .subs-form {
+        padding-top: 20px;
+    }
+}
 
 /***************** About Page ******************/
-
-.main-section {
-    /*This also affects the Blog page and Projects page*/
-    width: auto;
-}
-
-.main-section img {
-    /*This also affects the Blog page and Projects page*/
-    max-width: 100%;
-    height: auto;
-}
 
 .about-details p {
     font-size: 1.10rem;
